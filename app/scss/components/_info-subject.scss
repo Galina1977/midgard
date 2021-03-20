@@ -1,0 +1,29 @@
+.info-subject {
+  display: flex;
+  align-items: center;
+  &__title {
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-subject {
+    display: block;
+  }
+  .info-subject__title {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-subject {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-subject {
+    margin-bottom: 25px;
+  }
+}

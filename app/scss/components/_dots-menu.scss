@@ -1,0 +1,56 @@
+.dots {
+  position: relative;
+  &__box {
+    position: absolute;
+  }
+  &__click {
+    cursor: pointer;
+  }
+  &__content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    z-index: 5;
+  }
+}
+
+.dots__click.active + .dots__content {
+  display: block;
+}
+
+.dots-button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  margin-left: 67px;
+  &__svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    opacity: 0.76;
+  }
+}
+
+.dots-menu {
+  width: 220px;
+  height: auto;
+  padding: 10px 15px;
+  background: $bg;
+  text-align: left;
+  &__link {
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__checked-svg {
+    width: 17px;
+    height: 13px;
+    color: #fff;
+  }
+}

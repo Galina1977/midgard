@@ -1,0 +1,35 @@
+.information-tattoo {
+  min-height: auto;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top right;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+  }
+  &__inner {
+    padding: 99px 0 100px 0;
+    position: relative;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 1220px) {
+  .information-tattoo__inner {
+    padding: 99px 0 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .information-tattoo__inner {
+    padding: 45px 0 25px 0;
+  }
+}

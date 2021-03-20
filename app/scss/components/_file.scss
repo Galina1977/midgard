@@ -1,0 +1,20 @@
+.file {
+  max-width: 200px;
+  text-align: center;
+  margin-top: -25px;
+  &__input {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__text {
+    @extend%raleway-400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  &__button {
+    max-width: 180px;
+    background: transparent;
+    border-bottom: 1px dashed #fff;
+    cursor: pointer;
+  }
+}

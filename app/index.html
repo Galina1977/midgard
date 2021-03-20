@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="pobots" content="none">
+  <meta name="Author" content="Galina Pener">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midgard</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- 1 section -->
+  <header class="header">
+    <!-- Липкая кнопка вверх -->
+    <div class="scroller" id="scroller">
+      <a class="arrow" href="#">
+        <svg class="arrow-svg">
+          <use xlink:href="images/icon/arrow.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="container">
+      <div class="header-top" style="background-image: url(images/header/img_bg.png);">
+        <div class="header-top__inner">
+          <div class="header-top__content-left">
+            <a class="Logo" href="#!">
+              <img class="logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
+            </a>
+            <div class="header-top__info">
+              <p class="header-top__title">Тату-салон в Красноярске</p>
+              <p class="header-top__text">работает c 2011 года</p>
+            </div>
+          </div>
+          <div class="header-top__content-right">
+            <a class="header-top__tel" href="tel:2507475">Звоните: <span class="header-top__number">250-74-75</span></a>
+            <!-- popup всплывающее окно-->
+            <div class="popup">
+              <button class="btn" type="button" title="Всплывающее окно popup">Перезвоните мне</button>
+            </div>
+            <div class="pop">
+              <span class="pop__span">
+                <a class="pop__cross" href="#">
+                  <svg class="pop__cross-svg">
+                    <use xlink:href="images/icon/cross.svg#cross"></use>
+                  </svg>
+                </a>
+              </span>
+              <p class="pop__text">Заполните поля ниже и мы перезвоним вам, чтобы ответить на все вопросы </p>
+              <form class="form">
+                <label class="form__label">Как Вас зовут?
+                  <input class="form__input" type="text" name="name" placeholder="Как Вас зовут?">
+                </label>
+                <label class="form__label">Телефон для связи
+                  <input class="form__input" type="tel" name="tel" placeholder="Телефон для связи *" required>
+                </label>
+                <div class="form__button">
+                  <button class="btn" type="submit">Заказать звонок</button>
+                </div>
+                <a class="form__safety" href="#!"> Ваши данные в безопасности</a>
+              </form>
+            </div>
+          </div>
+          <!-- телефон и меню бургер скрытый блок-->
+          <div class="box-hidden">
+            <a class="box-hidden__tel" href="tel:2507475">
+              <svg class="box-hidden__tel-svg">
+                <use xlink:href="images/icon/phone-header.svg#phone-header"></use>
+              </svg>
+            </a>
+            <button class="menu-btn" type="button">
+              <svg class="menu-btn__svg">
+                <use xlink:href="images/icon/menu-btn.svg#menu-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/.header-top-->
+    </div>
+    <!--/.container-->
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a class="menu__link menu__link--active" href="#!">Татуировка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="http://localhost:3000/permanent-makeup.html" target="_blank">Перманентный макияж</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="http://localhost:3000/piercing.html" target="_blank">Пирсинг</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="http://localhost:3000/tattoo-removal.html" target="_blank">Лазерное удаление</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="http://localhost:3000/shop.html" target="_blank">Магазин</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--/.header-bottom-->
+  </header>
+  <main class="main">
+    <!-- 2 section -->
+    <div class="video-tattoo" style="background-image: url(images/video_tattoo/img_bg.jpg);">
+      <div class="container">
+        <div class="video-tattoo__inner">
+          <p class="video-tattoo__text"><span class="video-tattoo__span">Татуировки</span> любой сложности от опытных мастеров с <span class="video-tattoo__span">гарантией качества и безопасности</span></p>
+          <div class="video-tattoo__content">
+            <p class="video-tattoo__desc">Cмотреть видео</p>
+            <a class="video-tattoo__play" data-fancybox href="https://www.youtube.com/watch?v=Ndh6d-6Elnc">
+              <img class="video-tattoo__img" src="images/video_tattoo/play.png" alt="Видеоплеер"></a>
+            <p class="video-tattoo__desc">узнайте о нас за 30 секунд</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 section -->
+    <div class="about-tattoo" style="background-image: url(images/about/sloy.png);">
+      <div class="container">
+        <div class="about-tattoo__inner">
+          <div class="informative-card animate__animated wow animate__fadeInLeft" data-wow-delay="0.1s" style="background-image: url(images/about/img-1.png);">
+            <div class="informative-card__box">
+              <div class="informative-card__subject">Огромный опыт в татуировке</div>
+              <p class="informative-card__text">Работаем уже более 7 лет и являемся одним из самых опытных тату-салонов в Красноярске</p>
+              <p class="informative-card__text">В команде Midgard сегодня работает 7 тату-мастеров по разным направлениям: от "олд скула" до "реализма". Это гарантирует высочайшее качество любой татуировки и индивидуальный подход</p>
+            </div>
+          </div>
+          <div class="informative-card animate__animated wow animate__fadeInRight" data-wow-delay="0.3s" style="background-image: url(images/about/img-2.png);">
+            <div class="informative-card__box">
+              <div class="informative-card__subject">Работаем официально, одни из немногих</div>
+              <p class="informative-card__text">Мы делаем свою работу официально, соблюдая все требования. Успешно проходим любые проверки,установленные законодательством Российской Федерации</p>
+              <p class="informative-card__text">Всё оборудование, инструменты и расходные материалы сертифицированы и соответствуют ГОСТам</p>
+            </div>
+          </div>
+          <div class="security">
+            <div class="security__title title"><span class="title__span">Гарантируем</span> безопасность <br> и стерильность </div>
+            <div class="security__inner">
+              <div class="security__item">
+                <p class="security__text">
+                  Тату оборудование и расходные материалы полностью соответствуют сан-эпидемиологическим нормам
+                </p>
+              </div>
+              <div class="security__item">
+                <p class="security__text security__text--2">
+                  В работе используются только одноразовые иглы и
+                  расходные материалы
+                </p>
+              </div>
+              <div class="security__item">
+                <p class="security__text security__text--3">
+                  Инструмент, после использования, подвергается стерилизации на сертифицированном медицинском оборудовании
+                </p>
+              </div>
+              <div class="security__item">
+                <p class="security__text security__text--4">
+                  Помещение обрабатывается ультрафиолетом 3 раза в день, как в больнице
+                </p>
+              </div>
+              <div class="security__item">
+                <p class="security__text security__text--5">
+                  Барьерная защита и дезинфекция всех
+                  рабочих поверхностей
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-tattoo__btn-link">
+            <a class="btn-link" href="#!">Записаться на бесплатную консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 section -->
+    <div class="example-work">
+      <div class="container">
+        <div class="info-subject">
+          <div class="info-subject__title title"><span class="title__span">Примеры</span> наших работ</div>
+          <p class="info-subject__text text">Для вас наши мастера бесплатно разработают уникальный и неповторимый эскиз</p>
+        </div>
+        <div class="tabs">
+          <div class="tabs__top">
+            <a class="tabs__item tabs__item--active" href="#tab-1">Цветные</a>
+            <a class="tabs__item" href="#tab-2">Чёрно-белые</a>
+            <a class="tabs__item" href="#tab-3">Акция
+              <svg class="tabs__svg tabs__svg--active">
+                <use xlink:href="images/icon/star.svg#star"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__content-item tabs__content-item--active" id="tab-1">
+              <div class="photo-tattoo">
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/01.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/03.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/04.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/05.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/02.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/06.jpg);"></div>
+              </div>
+            </div>
+            <div class="tabs__content-item" id="tab-2">
+              <div class="photo-tattoo">
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/08.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/07.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/09.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/012.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/011.jpg);"></div>
+                <div class="photo-tattoo__item" style="background-image: url(images/example_work/010.jpg);"></div>
+              </div>
+            </div>
+            <div class="tabs__content-item" id="tab-3">
+              <img src="images/example_work/020.jpg" alt="Акция">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 5 section -->
+    <div class="slider-tattoo">
+      <div class="slider-tattoo__box animate__animated wow animate__fadeInUpBig" data-wow-delay="0.1s">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/01.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Make your own destiny</div>
+            <div class="slider-tattoo__location">Make your own destiny</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box animate__animated wow animate__fadeInUpBig" data-wow-delay="0.3s">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/02.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Can’t Stop, Won’t Stop</div>
+            <div class="slider-tattoo__location">Can’t Stop, Won’t Stop</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box animate__animated wow animate__fadeInUpBig" data-wow-delay="0.5s">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/03.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Beyond fear lies freedom</div>
+            <div class="slider-tattoo__location">Beyond fear lies freedom</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box animate__animated wow animate__fadeInUpBig" data-wow-delay="0.7s">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/04.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Relax! Take it easy!</div>
+            <div class="slider-tattoo__location">Relax! Take it easy!</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/05.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Stay strong</div>
+            <div class="slider-tattoo__location">Stay strong</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/06.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Life goes on</div>
+            <div class="slider-tattoo__location">Life goes on</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/07.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Make love not war</div>
+            <div class="slider-tattoo__location">Make love not war</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/08.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Help yourself</div>
+            <div class="slider-tattoo__location">Help yourself</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/09.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Never say never</div>
+            <div class="slider-tattoo__location">Never say never</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/010.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">All Begins With Love</div>
+            <div class="slider-tattoo__location">All Begins With Love</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/011.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Free yourself</div>
+            <div class="slider-tattoo__location">Free yourself</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tattoo__box">
+        <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/012.jpg);">
+          <div class="slider-tattoo__inner">
+            <div class="slider-tattoo__title">Hope Dies Last</div>
+            <div class="slider-tattoo__location">Hope Dies Last</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 6 section -->
+    <div class="price-tattoo">
+      <div class="container">
+        <div class="info-subject">
+          <div class="info-subject__title title"><span class="title__span">Цены</span> на татуировку</div>
+          <p class="info-subject__text text">Бесплатная коррекция в течение месяца при необходимости</p>
+        </div>
+        <div class="price-tattoo__items">
+          <div class="price-tattoo__inner">
+            <div class="price-tattoo__item price-tattoo__item--1">
+              <p class="price-tattoo__title">
+                Минимальная стоимость татуировки — 2500 руб.
+              </p>
+              <span class="price-tattoo__subtitle">
+                Можно сделать надпись, цепочку или небольшой рисунок
+              </span>
+            </div>
+            <div class="price-tattoo__item price-tattoo__item--2">
+              <p class="price-tattoo__title">
+                Средняя стоимость одного сеанса 4-5 часов— 6000 руб.
+              </p>
+              <span class="price-tattoo__subtitle">
+                За один сеанс можно сделать крупное тату или "забить" часть руки
+              </span>
+            </div>
+          </div>
+          <div class="price-tattoo__item price-tattoo__item--3">
+            <span class="price-tattoo__desc">
+              Мы оцениваем работу с точки зрения затраченных на нее сеансов
+            </span>
+            <p class="price-tattoo__title price-tattoo__title--3">
+              Сеанс — это промежуток времени, который длится 4-5 часов.
+            </p>
+            <span class="price-tattoo__subtitle price-tattoo__subtitle--3">
+              Подобное ограничение по времени обосновано и болевым порогом клиента и свойствами кожи
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="price-tattoo__bottom">
+        <div class="price-tattoo__container container">
+          <p class="price-tattoo__text">
+            <span class="price-tattoo__span">Дипломированные</span> специалисты, <span class="price__span">сертифицированное</span> оборудование!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 7 section -->
+    <div class="information-tattoo" style="background-image: url(images/comments/05.png);">
+      <div class="container">
+        <div class="information-tattoo__inner">
+          <div class="sketch">
+            <p class="sketch__text">Если у вас уже есть примерный эскиз, то вы можете узнать цену прямо сейчас </p>
+            <p class="sketch__desc">Заполните поля ниже и прикрепите изображение с вашим эскизом. Мы перезвоним вам и сделаем рассчет стоимости </p>
+            <form class="sketch__form">
+              <div class="sketch__box-input">
+                <label class="sketch__label">
+                  <input class="sketch__input" type="text" name="name" placeholder="Как Вас зовут ?">
+                </label>
+                <label class="sketch__label">
+                  <input class="sketch__input" type="tel" name="tel" placeholder="Телефон для связи *" required>
+                </label>
+                <a class="sketch__checked" href="#!"> Ваши данные в безопасности</a>
+              </div>
+              <div class="sketch__box-button">
+                <div class="sketch__button">
+                  <button class="btn" type="submit">Узнать цену</button>
+                </div>
+                <div class="file">
+                  <input class="file__input" name="file" type="file" id="file__input" multiple>
+                  <label for="file__input" class="file__button">
+                    <span class="file__text">Прикрепить изображение</span>
+                  </label>
+                </div>
+              </div>
+              <div>
+              </div>
+            </form>
+          </div>
+          <div class="comments">
+            <div class="comments__inner">
+              <div class="info-subject">
+                <div class="info-subject__title title"><span class="title__span">Отзывы тех,</span> кто уже сделал
+                  татуировку у нас</div>
+                <p class="info-subject__text text">Более 70 мнений о
+                  нашей работе</p>
+              </div>
+              <div class="comments__item">
+                <div class="comments__content-left">
+                  <div class="comments__box-img">
+                    <img class="comments__img" src="images/comments/1.jpg" alt="Avatar">
+                  </div>
+                  <div class="comments__box-number">
+                    <span class="comments__num">1</span>
+                    <span class="comments__num">2</span>
+                    <span class="comments__num">3</span>
+                    <span class="comments__num">4</span>
+                    <span class="comments__num">5</span>
+                  </div>
+                </div>
+                <div class="comments__content-right">
+                  <div class="comments__content-top">
+                    <div class="comments__author">
+                      <a class="comments__name" href="#!">Анна Смирнова</a>
+                      <a class="comments__review" href="#!">9 отзывов</a>
+                    </div>
+                    <span class="comments__date"> 20 апреля 2018</span>
+                  </div>
+                  <p class="comments__text">
+                    Не далее как вчера делала татуировку в этом салоне. Это моя первая татуировка и результатом я очень довольна. Спасибо ребятам за проведённую работу, выглядит все супер. Дали так же рекомендаций по уходу за рукой. Обязательно буду рекомендовать этот салон знакомым. И планирую вскором времени вернуться за новыми впечатлениями.
+                  </p>
+                  <div class="comments__content-bottom">
+                    <div class="user">
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg like">
+                          <use xlink:href="images/icon/like.svg#like"></use>
+                        </svg>
+                        <span class="user__num">51</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg chat">
+                          <use xlink:href="images/icon/chat.svg#chat"></use>
+                        </svg>
+                        <span class="user__num">5</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg reload">
+                          <use xlink:href="images/icon/reload.svg#reload"></use>
+                        </svg>
+                        <span class="user__num">0</span>
+                      </a>
+                    </div>
+                    <div class="dots">
+                      <div class="dots__box">
+                        <div class="dots__click">
+                          <button class="dots-button" type="button">
+                            <svg class="dots-button__svg">
+                              <use xlink:href="images/icon/dots-menu.svg#dots-menu"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="dots__content">
+                          <ul class="dots-menu">
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Копировать отзыв
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Поделиться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Пожаловаться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Скрыть
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comments__item">
+                <div class="comments__content-left">
+                  <div class="comments__box-img">
+                    <img class="comments__img" src="images/comments/2.jpg" alt="Avatar">
+                  </div>
+                  <div class="comments__box-number">
+                    <span class="comments__num">1</span>
+                    <span class="comments__num">2</span>
+                    <span class="comments__num">3</span>
+                    <span class="comments__num">4</span>
+                    <span class="comments__num">5</span>
+                  </div>
+                </div>
+                <div class="comments__content-right">
+                  <div class="comments__content-top">
+                    <div class="comments__author">
+                      <a class="comments__name" href="#!">Елена Хромова</a>
+                      <a class="comments__review" href="#!">4 отзыва</a>
+                    </div>
+                    <span class="comments__date"> 5 мая 2018</span>
+                  </div>
+                  <p class="comments__text">
+                    Сегодня в этом салоне мне сделали мою первую татуировку! Давно хотела, но никак не решалась. В пятницу пришла в салон на консультацию, спасибо парням, они помогли мне определиться с рисунком и местом нанесения ! На процедуру записалась на воскресенье, и вот пошёл день "икс" волновалась жутко так как боялась, что будет больно. Но это было безболезненно)
+                  </p>
+                  <div class="comments__content-bottom">
+                    <div class="user">
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg like">
+                          <use xlink:href="images/icon/like.svg#like"></use>
+                        </svg>
+                        <span class="user__num">56</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg chat">
+                          <use xlink:href="images/icon/chat.svg#chat"></use>
+                        </svg>
+                        <span class="user__num">4</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg reload">
+                          <use xlink:href="images/icon/reload.svg#reload"></use>
+                        </svg>
+                        <span class="user__num">0</span>
+                      </a>
+                    </div>
+                    <div class="dots">
+                      <div class="dots__box">
+                        <div class="dots__click">
+                          <button class="dots-button" type="button">
+                            <svg class="dots-button__svg">
+                              <use xlink:href="images/icon/dots-menu.svg#dots-menu"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="dots__content">
+                          <ul class="dots-menu">
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Копировать отзыв
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Поделиться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Пожаловаться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Скрыть
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comments__item">
+                <div class="comments__content-left">
+                  <div class="comments__box-img">
+                    <img class="comments__img" src="images/comments/3.jpg" alt="Avatar">
+                  </div>
+                  <div class="comments__box-number">
+                    <span class="comments__num">1</span>
+                    <span class="comments__num">2</span>
+                    <span class="comments__num">3</span>
+                    <span class="comments__num">4</span>
+                    <span class="comments__num">5</span>
+                  </div>
+                </div>
+                <div class="comments__content-right">
+                  <div class="comments__content-top">
+                    <div class="comments__author">
+                      <a class="comments__name" href="#!">Иван Федорцов</a>
+                      <a class="comments__review" href="#">6 отзывов</a>
+                    </div>
+                    <span class="comments__date"> 28 сентября 2018</span>
+                  </div>
+                  <p class="comments__text">
+                    Сегодня с девушкой обзавелись парными тату. Мы очень довольны результатом)) Комфортная кушетка, огромный выбор чернил, аккуратный мастер - это всё про студию Мидгард)
+                  </p>
+                  <div class="comments__content-bottom">
+                    <div class="user">
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg like">
+                          <use xlink:href="images/icon/like.svg#like"></use>
+                        </svg>
+                        <span class="user__num">29</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg chat">
+                          <use xlink:href="images/icon/chat.svg#chat"></use>
+                        </svg>
+                        <span class="user__num">8</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg reload">
+                          <use xlink:href="images/icon/reload.svg#reload"></use>
+                        </svg>
+                        <span class="user__num">0</span>
+                      </a>
+                    </div>
+                    <div class="dots">
+                      <div class="dots__box">
+                        <div class="dots__click">
+                          <button class="dots-button" type="button">
+                            <svg class="dots-button__svg">
+                              <use xlink:href="images/icon/dots-menu.svg#dots-menu"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="dots__content">
+                          <ul class="dots-menu">
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Копировать отзыв
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Поделиться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Пожаловаться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Скрыть
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comments__item">
+                <div class="comments__content-left">
+                  <div class="comments__box-img">
+                    <img class="comments__img" src="images/comments/4.jpg" alt="Avatar">
+                  </div>
+                  <div class="comments__box-number">
+                    <span class="comments__num">1</span>
+                    <span class="comments__num">2</span>
+                    <span class="comments__num">3</span>
+                    <span class="comments__num">4</span>
+                    <span class="comments__num">5</span>
+                  </div>
+                </div>
+                <div class="comments__content-right">
+                  <div class="comments__content-top">
+                    <div class="comments__author">
+                      <a class="comments__name" href="#!">Ирина Гамова</a>
+                      <a class="comments__review" href="#">3 отзыва</a>
+                    </div>
+                    <span class="comments__date"> 2 октября 2018</span>
+                  </div>
+                  <p class="comments__text">
+                    Решила сделать тату в этом салоне) так как до этого никогда не делала было страшновато) Но все прошло замечательно)Сергей отличный мастер)очень ему благодарна и давольна его работай))) Cпасибо Мидгард)))
+                  </p>
+                  <div class="comments__content-bottom">
+                    <div class="user">
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg like">
+                          <use xlink:href="images/icon/like.svg#like"></use>
+                        </svg>
+                        <span class="user__num">31</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg chat">
+                          <use xlink:href="images/icon/chat.svg#chat"></use>
+                        </svg>
+                        <span class="user__num">11</span>
+                      </a>
+                      <a class="user__link" href="#!">
+                        <svg class="user__svg reload">
+                          <use xlink:href="images/icon/reload.svg#reload"></use>
+                        </svg>
+                        <span class="user__num">0</span>
+                      </a>
+                    </div>
+                    <div class="dots">
+                      <div class="dots__box">
+                        <div class="dots__click">
+                          <button class="dots-button" type="button">
+                            <svg class="dots-button__svg">
+                              <use xlink:href="images/icon/dots-menu.svg#dots-menu"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="dots__content">
+                          <ul class="dots-menu">
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Копировать отзыв
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Поделиться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Пожаловаться
+                              </a>
+                            </li>
+                            <li class="dots-menu__list">
+                              <a class="dots-menu__link" href="#!">
+                                <svg class="dots-menu__checked-svg">
+                                  <use xlink:href="images/icon/checked.svg#checked"></use>
+                                </svg>
+                                Скрыть
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 8 section -->
+    <div class="acquaintance-tattoo" style="background-image: url(images/tattoo_2.jpg);">
+      <div class="container">
+        <div class="acquaintance-tattoo__inner">
+          <div class="sketch">
+            <p class="sketch__text">Приходите к нам в гости</p>
+            <p class="sketch__desc">Будем рады познакомиться, ответить на все интересующие вас вопросы, а также помочь в выборе эскиза и места для будущей татуировки</p>
+            <form class="form">
+              <label class="form__label">Как Вас зовут?
+                <input class="form__input" type="text" name="name" placeholder="Как Вас зовут?">
+              </label>
+              <label class="form__label">Телефон для связи
+                <input class="form__input" type="tel" name="tel" placeholder="Телефон для связи *" required>
+              </label>
+              <div class="form__button">
+                <button class="btn" type="submit">Записаться</button>
+              </div>
+              <a class="form__safety" href="#!"> Ваши данные в безопасности</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- 9 section -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="container">
+        <p class="footer__box-link">
+          <a class="footer__link" href="#!">
+            Подробнее
+          </a>
+        </p>
+        <address class="address">
+          <div class="address__item address__item--adds">
+            <p class="address__text">Наш адрес:</p>
+            <a class="address__link" href="#!">
+              г. Красноярск, ул. Горького, 18.
+            </a>
+          </div>
+          <div class="address__item address__item--tel">
+            <p class="address__text">Наш телефон:</p>
+            <a class="address__link" href="tel:+83912507475">
+              +7(391)250-74-75
+            </a>
+            <a class="address__link" href="tel:+89135327475">
+              +7(913)532-74-75 <span class="address__span">(WhatsApp, Viber)</span>
+            </a>
+          </div>
+          <div class="address__item">
+            <p class="address__text">Мы в соц сетях:</p>
+            <p class="address__icons">
+              <a class="address__svg" href="#!">
+                <svg class="address__icon-social">
+                  <use xlink:href="images/icon/vk.svg#vk"></use>
+                </svg>
+              </a>
+              <a class="address__svg" href="#!">
+                <svg class="address__icon-social">
+                  <use xlink:href="images/icon/instagram.svg#instagram"></use>
+                </svg>
+              </a>
+            </p>
+          </div>
+        </address>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+  <!-- ©Верстка сделана Пенер Галиной 18 марта 2021 года -->
+  <!-- email: galyapener@mail.ru -->
+</body>
+
+</html>

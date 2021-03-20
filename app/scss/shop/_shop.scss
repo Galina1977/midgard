@@ -1,0 +1,43 @@
+.shop {
+  padding: 65px 0 95px;
+  background-color: $bg;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 228px;
+    width: 270px;
+    height: 230px;
+    border-radius: 12px 12px 0px 0px;
+    margin-right: 20px;
+    margin-bottom: 125px;
+  }
+  &__box {
+    height: 105px;
+    padding: 20px 30px;
+    background-color: #2d2d2d;
+    border-top: 3px solid $bg;
+    border-radius: 0 0 8px 8px;
+  }
+  &__subject {
+    @extend%raleway-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: $default;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .shop {
+    padding: 65px 0 50px;
+  }
+  .shop__item {
+    margin-right: 0;
+  }
+}

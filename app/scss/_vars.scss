@@ -1,0 +1,42 @@
+$default: #fff;
+$accent: #4ec9f8;
+$bg: #1f50a3;
+
+%proximanova-400 {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-weight: 400;
+}
+%raleway-300 {
+  font-family: "Raleway-Light", sans-serif;
+  font-weight: 300;
+}
+%raleway-400 {
+  font-family: "Raleway-Regular", sans-serif;
+  font-weight: 400;
+}
+%raleway-500 {
+  font-family: "Raleway-Medium", sans-serif;
+  font-weight: 500;
+}
+%raleway-600 {
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-weight: 600;
+}
+%raleway-700 {
+  font-family: "Raleway-Bold", sans-serif;
+  font-weight: 700;
+}
+%raleway-800 {
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-weight: 800;
+}
+%raleway-900 {
+  font-family: "Raleway-Black", sans-serif;
+  font-weight: 900;
+}
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

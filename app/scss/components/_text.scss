@@ -1,0 +1,15 @@
+.text {
+  max-width: 425px;
+  min-height: auto;
+  padding: 0 5px 0 20px;
+  @extend%raleway-500;
+  font-size: 18px;
+  line-height: 25px;
+  border-left: 3px solid #1f50a3;
+}
+
+@media (max-width: 768px) {
+  .text {
+    max-width: 100%;
+  }
+}

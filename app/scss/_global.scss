@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  @extend%raleway-400;
+  font-size: 18px;
+  color: $default;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .animate__animated {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

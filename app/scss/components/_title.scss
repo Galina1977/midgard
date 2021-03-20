@@ -1,0 +1,21 @@
+.title {
+  @extend%raleway-300;
+  font-size: 35px;
+  line-height: 45px;
+  &__span {
+    @extend%raleway-900;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,131 @@
+.slider-tattoo {
+  padding: 120px 0 100px;
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  &__inner {
+    min-height: 650px;
+    background: rgba(#1c2121, 0.85);
+    transition: background 0.5s;
+    position: relative;
+    &:hover {
+      background-color: rgba(#1c2121, 0.3);
+    }
+  }
+  &__title {
+    @extend%raleway-800;
+    font-size: 35px;
+    line-height: 45px;
+    padding: 50px 0 0 40px;
+    max-width: 360px;
+    text-align: center;
+  }
+  &__location {
+    @extend%proximanova-400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 40px;
+    bottom: 75px;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+  }
+}
+
+.slick-slide:nth-child(4n + 1) {
+  .slider-tattoo__box {
+    margin-top: 32px;
+  }
+}
+.slick-slide:nth-child(4n + 3) {
+  .slider-tattoo__box {
+    margin-top: 89px;
+  }
+}
+
+.slick-current {
+  .slider-tattoo__inner {
+    background: rgba(#1c2121, 0.3);
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 5%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 40px;
+  height: 29px;
+  z-index: 10;
+  path {
+    fill: #fff;
+  }
+}
+
+.slick-next {
+  right: 40px;
+}
+.slick-prev {
+  right: 105px;
+}
+
+.slick-disabled {
+  path {
+    fill: #1f50a3;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slider-tattoo {
+    padding: 60px 0 50px;
+  }
+  .slider-tattoo__inner {
+    min-height: 575px;
+  }
+  .slider-tattoo__title {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 50px 0 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-tattoo {
+    padding: 60px 0 30px;
+  }
+  .slider-tattoo__inner {
+    min-height: 510px;
+  }
+  .slider-tattoo__location {
+    bottom: 40px;
+    letter-spacing: 7px;
+  }
+  .slick-arrow {
+    top: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-tattoo__title {
+    padding: 50px 0 0 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-tattoo__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 50px 0 0 10px;
+  }
+  .slider-tattoo__location {
+    bottom: 25px;
+  }
+}

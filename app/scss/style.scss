@@ -1,0 +1,42 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+@import "components/header";
+@import "components/footer";
+@import "components/scroller";
+@import "components/btn";
+@import "components/btn-link";
+@import "components/title";
+@import "components/text";
+@import "components/form";
+@import "components/pop";
+@import "components/informative-card";
+@import "components/security";
+@import "components/tabs";
+@import "components/photo-tattoo";
+@import "components/slider-tattoo";
+@import "components/info-subject";
+@import "components/sketch";
+@import "components/comments";
+@import "components/file";
+@import "components/user";
+@import "components/dots-menu";
+@import "components/slogan-title";
+
+@import "index/video-tattoo";
+@import "index/about-tattoo";
+@import "index/example-work";
+@import "index/price-tattoo";
+@import "index/information-tattoo";
+@import "index/acquaintance-tattoo";
+
+@import "permanent_makeup/features";
+@import "permanent_makeup/price-makeup";
+
+@import "tattoo_removal/tattoo-removal";
+
+@import "shop/shop";
+@import "shop/shop-popup";

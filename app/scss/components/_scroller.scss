@@ -1,0 +1,21 @@
+.scroller {
+  position: fixed;
+  bottom: 30px;
+  background: transparent url("../images/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: top left 20%;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+.arrow-svg {
+  width: 50px;
+  height: 50px;
+  color: $default;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}

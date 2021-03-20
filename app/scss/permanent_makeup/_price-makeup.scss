@@ -1,0 +1,75 @@
+.price-makeup {
+  padding: 55px 0 80px;
+  &__heading {
+    display: block;
+    @extend%raleway-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #4ec9f8;
+    margin-bottom: 35px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    max-width: 245px;
+    min-height: auto;
+    & + & {
+      margin-left: 110px;
+    }
+  }
+  &__img {
+    min-width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border: 3px solid #4ec9f8;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  &__box {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    display: block;
+    @extend%raleway-500;
+    font-size: 17px;
+    line-height: 27px;
+    color: $default;
+    margin-bottom: 5px;
+  }
+  &__price {
+    display: block;
+    @extend%raleway-900;
+    font-size: 25px;
+    line-height: 27px;
+    color: $default;
+    margin-bottom: 60px;
+  }
+  &__dash {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .price-makeup__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-makeup__item + .price-makeup__item {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-makeup {
+    padding: 20px 0 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .price-makeup {
+    padding: 0;
+  }
+}

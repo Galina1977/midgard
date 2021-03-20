@@ -1,0 +1,151 @@
+.security {
+  padding-top: 50px;
+  &__title {
+    margin-bottom: 70px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    flex: 110;
+    min-height: 265px;
+    height: 100%;
+    padding-right: 10px;
+    border-right: 1px solid #303030;
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+      border-right: 0;
+    }
+    &--6,
+    &--7,
+    &--8,
+    &--9 {
+      padding-right: 0;
+      border-right: 0;
+      margin-right: 0;
+    }
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    padding: 140px 5px 5px 5px;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url("../images/about/1.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow: 0px 10px 105px 0px rgba(#1f50a3, 0.3);
+      border-radius: 45%;
+      width: 111px;
+      height: 111px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--2::before {
+      content: "";
+      background-image: url("../images/about/2.png");
+    }
+    &--3::before {
+      content: "";
+      background-image: url("../images/about/3.png");
+    }
+    &--4::before {
+      content: "";
+      background-image: url("../images/about/4.png");
+    }
+    &--5::before {
+      content: "";
+      background-image: url("../images/about/5.png");
+    }
+    &--6 {
+      max-width: 320px;
+      min-height: auto;
+      border-right: 0;
+      margin: 0 auto;
+      &::before {
+        content: "";
+        background-image: url("../images/piercing/icon_1.png");
+      }
+    }
+    &--7 {
+      max-width: 310px;
+      min-height: auto;
+      border-right: 0;
+      margin: 0 auto;
+      &::before {
+        content: "";
+        background-image: url("../images/piercing/icon_2.png");
+      }
+    }
+    &--8 {
+      max-width: 320px;
+      min-height: auto;
+      &::before {
+        content: "";
+        background-image: url("../images/tattoo_removal/icon_1.png");
+      }
+    }
+
+    &--9 {
+      max-width: 320px;
+      &::before {
+        content: "";
+        background-image: url("../images/tattoo_removal/icon_2.png");
+      }
+    }
+
+    &--10 {
+      max-width: 320px;
+      &::before {
+        content: "";
+        background-image: url("../images/tattoo_removal/icon_3.png");
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .security__inner {
+    display: block;
+  }
+  .security__item {
+    max-width: 400px;
+    min-height: auto;
+    padding-right: 0;
+    border-right: 0;
+    margin-right: 0;
+    margin: 0 auto 20px;
+  }
+  .security__item:last-child {
+    margin: 0 auto;
+  }
+  .security__text {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .security {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .security__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .security {
+    padding-top: 0;
+  }
+  .security__title {
+    margin-bottom: 30px;
+  }
+}

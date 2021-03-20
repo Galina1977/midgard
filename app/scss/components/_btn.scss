@@ -1,0 +1,16 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/header/bg_button.png");
+  background-repeat: no-repeat;
+  width: 183px;
+  height: 47px;
+  font-size: 16px;
+  line-height: 30px;
+  color: $default;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
