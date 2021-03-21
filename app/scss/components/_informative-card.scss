@@ -3,24 +3,8 @@
   background-position: right;
   padding: 50px 0;
   margin-bottom: 75px;
-  position: relative;
   &:nth-child(even) {
     background-position: left;
-  }
-  &--hit::before {
-    content: "Хит";
-    width: 147px;
-    height: 55px;
-    background-color: #4ec9f8;
-    border-radius: 27.5px 0 0 27.5px;
-    padding: 19px 67px 21px 44px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    @extend%raleway-800;
-    font-size: 20px;
-    line-height: 16px;
-    color: #000;
   }
   &__box {
     max-width: 670px;
@@ -92,6 +76,12 @@
   .informative-card {
     padding: 245px 0 35px;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .informative-card--hit {
+    background-size: contain;
   }
 }
 

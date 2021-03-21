@@ -71,11 +71,11 @@
 }
 
 @media (max-width: 576px) {
-  .features__list {
-    justify-content: center;
+  .features {
+    min-height: auto;
   }
-  .features__span {
-    margin-bottom: 40px;
+  .features__menu {
+    display: none;
   }
 }
 
