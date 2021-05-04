@@ -16,10 +16,15 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #000;
   @extend%raleway-400;
   font-size: 18px;
+  line-height: 1;
+  background-color: #000;
   color: $default;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
   min-width: 320px;
   overflow-x: hidden;
 }
@@ -32,6 +37,27 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+button {
+  outline-offset: 1px;
+  outline-color: #1f50a3;
+  outline-width: 1px;
+}
+
+a:focus {
+  outline-offset: 1px;
+  outline-color: #1f50a3;
+  outline-width: 1px;
+}
+
+@media (max-width: 968px) {
+  .mobile-overflow {
+    width: 1000px;
+  }
+  .tabs-wrapper {
+    overflow-x: scroll;
+  }
 }
 
 @media (max-width: 768px) {

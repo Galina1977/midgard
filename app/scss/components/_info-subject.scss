@@ -1,8 +1,9 @@
 .info-subject {
   display: flex;
   align-items: center;
+  margin-bottom: 55px;
   &__title {
-    margin-right: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -11,7 +12,7 @@
     display: block;
   }
   .info-subject__title {
-    margin-right: 0;
+    padding-right: 0;
     margin-bottom: 20px;
   }
 }

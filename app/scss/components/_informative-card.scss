@@ -74,8 +74,13 @@
     padding: 30px 20px 55px 20px;
   }
   .informative-card {
-    padding: 245px 0 35px;
+    padding: 245px 0 50px;
     margin-bottom: 0;
+  }
+  .animate__animated.animate__fadeInLeft {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
   }
 }
 

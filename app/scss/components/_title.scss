@@ -3,6 +3,7 @@
   font-size: 35px;
   line-height: 45px;
   &__span {
+    display: inline-block;
     @extend%raleway-900;
   }
 }

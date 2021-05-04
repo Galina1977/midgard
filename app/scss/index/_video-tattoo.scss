@@ -12,6 +12,7 @@
     padding: 0 5px;
     font-size: 45px;
     line-height: 55px;
+    text-shadow: 2px 3px 5px #000;
     text-align: center;
     margin-bottom: 50px;
   }
@@ -27,9 +28,27 @@
     width: 121px;
     height: 121px;
     margin: 0 30px;
+    border-radius: 50%;
+    animation: pulse 2s linear infinite;
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(14, 114, 207, 0.8),
+          0 0 0 0 rgba(16, 95, 214, 0.5);
+      }
+      40% {
+        box-shadow: 0 0 0 70px rgba(2, 6, 59, 0), 0 0 0 30px rgba(2, 2, 49, 0);
+      }
+      80% {
+        box-shadow: 0 0 0 70px rgba(2, 1, 24, 0), 0 0 0 30px rgba(10, 1, 122, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(6, 2, 44, 0), 0 0 0 40px rgba(3, 1, 22, 0);
+      }
+    }
   }
   &__desc {
     @extend%raleway-300;
+    text-shadow: 2px 3px 5px #000;
     font-size: 20px;
     line-height: 30px;
   }
@@ -38,45 +57,50 @@
 @media (max-width: 992px) {
   .video-tattoo {
     min-height: 570px;
-  }
-  .video-tattoo__text {
-    font-size: 37px;
-    line-height: 49px;
-    margin-bottom: 35px;
+    &__text {
+      font-size: 37px;
+      line-height: 49px;
+      margin-bottom: 35px;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .video-tattoo {
     min-height: 492px;
-  }
-  .video-tattoo__text {
-    font-size: 29px;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
-  .video-tattoo__desc {
-    display: none;
+    &__text {
+      font-size: 29px;
+      line-height: 32px;
+      margin-bottom: 25px;
+    }
+    &__desc {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 640px) {
-  .video-tattoo__img {
-    width: 90px;
-    height: 90px;
-    margin: 0;
+  .video-tattoo {
+    &__inner {
+      padding-top: 85px;
+    }
+    &__img {
+      width: 90px;
+      height: 90px;
+      margin: 0;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .video-tattoo {
-    min-height: 415px;
-  }
-  .video-tattoo__inner {
-    padding-top: 60px;
-  }
-  .video-tattoo__text {
-    font-size: 23px;
-    line-height: 35px;
+    min-height: 356px;
+    &__inner {
+      padding-top: 25px;
+    }
+    &__text {
+      font-size: 23px;
+      line-height: 28px;
+    }
   }
 }

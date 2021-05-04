@@ -31,7 +31,6 @@
     @extend%raleway-700;
     font-size: 18px;
     line-height: 30px;
-    text-decoration: underline;
     color: #1f50a3;
     padding-right: 58px;
     position: relative;
@@ -57,7 +56,7 @@
 }
 .address {
   max-width: 425px;
-  padding: 70px 5px 40px 5px;
+  padding-top: 70px;
   min-height: auto;
   @extend%raleway-500;
   font-style: normal;
@@ -125,8 +124,16 @@
 }
 
 @media (max-width: 1620px) {
-  .footer__inner::before,
+  .footer__inner::before {
+    right: 5%;
+  }
   .footer__inner::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__inner::before {
     display: none;
   }
   .address {
@@ -136,19 +143,17 @@
 
 @media (max-width: 992px) {
   .footer {
-    padding: 45px 0;
+    padding: 45px 0 80px;
     min-height: auto;
   }
   .address {
-    padding: 40px 0;
+    max-width: 277px;
+    padding-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .footer {
-    padding: 25px 0;
-  }
-  .address {
-    padding: 20px 0;
+    padding-top: 25px;
   }
 }

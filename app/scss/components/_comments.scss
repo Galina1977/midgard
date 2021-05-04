@@ -14,14 +14,15 @@
   }
   &__box-img {
     width: 74px;
+    height: 75px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 15px;
     margin-left: auto;
   }
   &__img {
-    min-width: 74px;
-    height: 74px;
+    width: 74px;
+    height: 75px;
     object-fit: cover;
   }
   &__box-number {
@@ -160,10 +161,13 @@
   .comments__content-bottom {
     justify-content: flex-start;
   }
+  .comments .info-subject__title {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 360px) {
   .comments__inner {
-    padding-top: 45px;
+    padding-top: 55px;
   }
 }

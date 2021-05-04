@@ -2,17 +2,7 @@ $(function () {
   // Меню Бургер
   $(".menu-btn").on("click", function () {
     $(".menu__list").toggleClass("menu__list--active");
-  });
-
-  // Всплывающее окно
-  $(document).ready(function () {
-    $(".popup").click(function () {
-      $(".pop").fadeIn(300);
-    });
-
-    $(".pop__span").click(function () {
-      $(".pop").fadeOut(300);
-    });
+    $("body").toggleClass("lock");
   });
 
   // Табы
@@ -46,12 +36,16 @@ $(function () {
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -77,10 +71,27 @@ $(function () {
     });
   });
 
+  // загрузить картинку
+  var uploadImageInput = document.querySelector("#upload-image");
+  var uploadFileNameElement = document.querySelector(
+    ".upload-form__label-file"
+  );
+
+  uploadImageInput.addEventListener("change", fileSelectHandler);
+
+  function fileSelectHandler(evt) {
+    var file = uploadImageInput.files[0];
+
+    if (file) {
+      uploadFileNameElement.textContent = file.name;
+    }
+  }
+
   // dots-menu Отзывы
   $(".dots__click").on("click", function () {
     $(this).toggleClass("active");
   });
+
   // Анимация
   new WOW().init();
   // Отключили анимацию на мобильных устройствах и планшетах main.js

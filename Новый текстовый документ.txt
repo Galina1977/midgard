@@ -1,0 +1,26 @@
+<!-- popup всплывающее окно-->
+            <div class="popup">
+              <button class="btn" type="button" title="Всплывающее окно popup">Перезвоните мне</button>
+            </div>
+            <div class="pop">
+              <span class="pop__span">
+                <a class="pop__cross" href="#">
+                  <svg class="pop__cross-svg">
+                    <use xlink:href="images/icon/cross.svg#cross"></use>
+                  </svg>
+                </a>
+              </span>
+              <p class="pop__text">Заполните поля ниже и мы перезвоним вам, чтобы ответить на все вопросы </p>
+              <form class="form">
+                <label class="form__label">Как Вас зовут?
+                  <input class="form__input" type="text" name="name" placeholder="Как Вас зовут?">
+                </label>
+                <label class="form__label">Телефон для связи
+                  <input class="form__input" type="tel" name="tel" placeholder="Телефон для связи *" required>
+                </label>
+                <div class="form__button">
+                  <button class="btn" type="submit">Заказать звонок</button>
+                </div>
+                <a class="form__safety" href="#!"> Ваши данные в безопасности</a>
+              </form>
+            </div>

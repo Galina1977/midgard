@@ -46,14 +46,9 @@
 
 @media (max-width: 480px) {
   .tabs__top {
-    border-bottom: none;
     margin-bottom: 10px;
   }
-  .tabs__item {
-    display: block;
-    margin-bottom: 15px;
-  }
   .tabs__item + .tabs__item {
-    margin-left: 0;
+    margin-left: 40px;
   }
 }
