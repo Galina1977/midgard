@@ -1,11 +1,18 @@
 $(function () {
-  // Меню Бургер
   $(".menu-btn").on("click", function () {
     $(".menu__list").toggleClass("menu__list--active");
     $("body").toggleClass("lock");
   });
 
-  // Табы
+  $(".price-makeup__heading-drop").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("price-makeup__heading-drop--active");
+  });
+
+  $(".dots__click").on("click", function () {
+    $(this).toggleClass("active");
+  });
+
   $(".tabs__item").on("click", function (e) {
     e.preventDefault();
     $(".tabs__item").removeClass("tabs__item--active");
@@ -15,7 +22,6 @@ $(function () {
     $($(this).attr("href")).addClass("tabs__content-item--active");
   });
 
-  // Слайд slider-tattoo
   $(".slider-tattoo").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -51,7 +57,6 @@ $(function () {
     ],
   });
 
-  // Липкая кнопка вверх
   $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
@@ -71,31 +76,21 @@ $(function () {
     });
   });
 
-  // загрузить картинку
-  var uploadImageInput = document.querySelector("#upload-image");
-  var uploadFileNameElement = document.querySelector(
-    ".upload-form__label-file"
-  );
-
-  uploadImageInput.addEventListener("change", fileSelectHandler);
-
-  function fileSelectHandler(evt) {
-    var file = uploadImageInput.files[0];
-
-    if (file) {
-      uploadFileNameElement.textContent = file.name;
-    }
-  }
-
-  // dots-menu Отзывы
-  $(".dots__click").on("click", function () {
-    $(this).toggleClass("active");
-  });
-
-  // Анимация
   new WOW().init();
-  // Отключили анимацию на мобильных устройствах и планшетах main.js
   var wow = new WOW({
     mobile: false,
   });
 });
+
+var uploadImageInput = document.querySelector("#upload-image");
+var uploadFileNameElement = document.querySelector(".upload-form__label-file");
+
+uploadImageInput.addEventListener("change", fileSelectHandler);
+
+function fileSelectHandler(evt) {
+  var file = uploadImageInput.files[0];
+
+  if (file) {
+    uploadFileNameElement.textContent = file.name;
+  }
+}

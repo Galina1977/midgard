@@ -122,6 +122,11 @@
 }
 
 @media (max-width: 640px) {
+  .price-tattoo {
+    .info-subject__title {
+      text-align: center;
+    }
+  }
   .price-tattoo__items {
     padding: 0 5px;
     margin-bottom: 32px;

@@ -110,7 +110,7 @@
     justify-content: center;
   }
   &__item {
-    padding: 30px 30px;
+    padding: 15px 30px;
     border-left: 1px solid #383838;
     border-bottom: 3px solid transparent;
     transition: border 0.3s;
@@ -125,6 +125,7 @@
     }
   }
   &__link {
+    padding: 20px 10px;
     font-size: 17px;
     line-height: 29px;
     color: #fff;
