@@ -15,16 +15,6 @@
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
   }
-  &::after {
-    content: "";
-    background-image: url("../images/about/05.png");
-    background-repeat: no-repeat;
-    width: 826px;
-    height: 894px;
-    position: absolute;
-    right: 11%;
-    bottom: 8%;
-  }
   &__inner {
     padding-top: 85px;
     padding-bottom: 100px;
