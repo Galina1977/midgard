@@ -1,6 +1,7 @@
 .informative-card {
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 50%;
   padding: 50px 0;
   margin-bottom: 75px;
   &:nth-child(even) {
@@ -22,9 +23,6 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #505050;
     margin-bottom: 25px;
-    &--hit {
-      color: #4ec9f8;
-    }
   }
   &__text {
     font-size: 17px;
@@ -33,20 +31,6 @@
     margin-bottom: 20px;
     &:last-child {
       margin-bottom: 0;
-    }
-    &--hit {
-      padding-left: 25px;
-      position: relative;
-      &::before {
-        content: "";
-        width: 10px;
-        height: 10px;
-        background-color: #4ec9f8;
-        border-radius: 50%;
-        position: absolute;
-        top: 8px;
-        left: 0;
-      }
     }
   }
 }
@@ -57,57 +41,27 @@
 @media (max-width: 992px) {
   .informative-card {
     background-position: top;
-    padding: 300px 0 50px;
-    margin-bottom: 15px;
-  }
-  .informative-card:nth-child(even) {
-    background-position: top;
-  }
-  .informative-card__box {
-    margin: 0 auto;
+    background-size: 0;
+    margin-bottom: 0;
+    &:nth-child(even) {
+      background-position: top;
+    }
+    &__box {
+      margin: 0 auto;
+    }
   }
 }
 
 @media (max-width: 768px) {
-  .informative-card__box {
-    max-width: 620px;
-    padding: 30px 20px 55px 20px;
-  }
   .informative-card {
-    padding: 245px 0 50px;
-    margin-bottom: 0;
-  }
-  .animate__animated.animate__fadeInLeft {
-    transition-property: none !important;
-    transform: none !important;
-    animation: none !important;
+    padding: 20px 0;
   }
 }
 
-@media (max-width: 620px) {
-  .informative-card--hit {
-    background-size: contain;
-  }
-}
-
-@media (max-width: 480px) {
-  .informative-card__box {
-    padding: 35px 10px 35px 10px;
-  }
-  .informative-card__subject {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-
-@media (max-width: 360px) {
-  .informative-card__box {
-    padding: 15px 10px 15px 10px;
-  }
-  .informative-card__subject {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+@media (max-width: 576px) {
+  .informative-card {
+    &__box {
+      padding: 25px;
+    }
   }
 }

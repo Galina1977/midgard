@@ -20,58 +20,41 @@
       </svg>
     </a>
     <div class="container">
-      <div class="header-top" style="background-image: url(images/header/img_bg.png);">
-        <div class="header-top__inner">
-          <div class="header-top__content">
-            <a class="Logo" href="#!">
-              <img class="Logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
-            </a>
-            <div class="header-top__info">
-              <p class="header-top__title">Тату-салон в Красноярске</p>
-              <p class="header-top__text">работает c 2011 года</p>
-            </div>
-          </div>
-          <div class="header-top__box-tel">
-            <a class="header-top__tel" href="tel:2507475">Звоните:
-              <span>250-74-75</span>
-            </a>
-          </div>
-          <div class="box-hidden">
-            <a class="box-hidden__tel" href="tel:2507475">
-              <svg class="box-hidden__tel-svg">
-                <use xlink:href="images/icon/phone-header.svg#phone-header"></use>
-              </svg>
-            </a>
-            <button class="menu-btn" type="button">
-              <svg class="menu-btn__svg">
-                <use xlink:href="images/icon/menu-btn.svg#menu-btn"></use>
-              </svg>
-            </button>
+      <div class="header__top" style="background-image: url(images/header/img_bg.png);">
+        <div class="header__inner">
+          <a class="Logo" href="#!">
+            <img class="Logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
+          </a>
+          <a class="header__tel" href="tel:2507475">Звоните:
+            <span class="header__number">250-74-75</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__mobile-wrapper">
+          <div class="mobile-overflow">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="http://localhost:3000/" target="_blank">Татуировка</a>
+                </li>
+                <li class="menu__item menu__item--active">
+                  <a class="menu__link menu__link--active" href="http://localhost:3000/permanent-makeup.html">Перманентный макияж</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#!">Пирсинг</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#!">Лазерное удаление</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-bottom">
-      <div class="container">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="http://localhost:3000/" target="_blank">Татуировка</a>
-            </li>
-            <li class="menu__item menu__item--active">
-              <a class="menu__link menu__link--active" href="#!" target="_blank">Перманентный макияж</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="http://localhost:3000/piercing.html" target="_blank">Пирсинг</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="http://localhost:3000/tattoo-removal.html" target="_blank">Лазерное удаление</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!--/.header-bottom-->
   </header>
   <!--  -->
   <main class="main">
@@ -139,9 +122,12 @@
                 они не будут полностью довольны результатом</p>
             </div>
           </div>
-          <div class="permanent-makeup">
-            <a class="permanent-makeup__btn-link btn-link" href="#!">Записаться на бесплатную консультацию</a>
+          <div class="about-tattoo__btn-link">
+            <a class="btn-link" href="#!">Записаться на бесплатную консультацию</a>
           </div>
+          <!-- <div class="permanent-makeup">
+            <a class="permanent-makeup__btn-link btn-link" href="#!">Записаться на бесплатную консультацию</a>
+          </div> -->
         </div>
       </div>
     </div>
@@ -211,130 +197,112 @@
           <div class="info-subject__title title"><span class="title__span">Цены</span> на перманентный макияж</div>
         </div>
         <div class="price-makeup">
-          <div class="price-makeup__items">
-            <div class="price-makeup__content">
-              <span id="makeup-1" class="price-makeup__heading price-makeup__heading-drop">Перманентный макияж бровей</span>
+          <div class="price-makeup__content">
+            <span id="makeup-1" class="price-makeup__heading price-makeup__heading-drop">Перманентный макияж бровей</span>
+            <div class="price-makeup__box-hidden">
               <div class="price-makeup__inner">
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/4.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Напыление (пудровые брови) </span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4000 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/4.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Напыление (пудровые брови) </span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4000 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/5.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Микроблейдинг</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4500 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/5.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Микроблейдинг</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4500 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/6.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Теневая растушевка</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 3000 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/6.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Теневая растушевка</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 3000 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/7.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Микрошейдинг</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4200 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/7.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Микрошейдинг</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4200 р.</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="price-makeup__content">
-              <span id="makeup-2" class="price-makeup__heading price-makeup__heading-drop">Перманентный макияж век</span>
+          </div>
+          <div class="price-makeup__content">
+            <span id="makeup-2" class="price-makeup__heading price-makeup__heading-drop">Перманентный макияж век</span>
+            <div class="price-makeup__box-hidden">
               <div class="price-makeup__inner">
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/8.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Стрелочка</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 800 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/8.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Стрелочка</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 800 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/9.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Межресничное пространство</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 2000 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/9.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Межресничное пространство</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 2000 р.</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="price-makeup__content">
-              <span id="makeup-3" class="price-makeup__heading price-makeup__heading-drop">Перманентный макияж губ</span>
+          </div>
+          <div class="price-makeup__content">
+            <span id="makeup-3" class="price-makeup__heading price-makeup__heading-drop">Перманентный макияж губ</span>
+            <div class="price-makeup__box-hidden">
               <div class="price-makeup__inner">
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/10.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Полное заполнение</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 3100 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/10.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Полное заполнение</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 3100 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/11.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Напыление (пудровые губы) </span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 2500 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/11.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Напыление (пудровые губы) </span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 2500 р.</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="price-makeup__content">
-              <span id="makeup-4" class="price-makeup__heading price-makeup__heading-drop">Прочие услуги</span>
+          </div>
+          <div class="price-makeup__content">
+            <span id="makeup-4" class="price-makeup__heading price-makeup__heading-drop">Прочие услуги</span>
+            <div class="price-makeup__box-hidden">
               <div class="price-makeup__inner">
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/12.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Мушка</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 700 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/12.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Мушка</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 700 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/13.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Коррекция перманентного макияжа</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 500 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/13.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Коррекция перманентного макияжа</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 500 р.</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/14.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Обновление перманентного макияжа или рефреш (через 1-2 года после процедуры в нашей студии) — 50% от стоимости работы</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/14.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Обновление перманентного макияжа или рефреш (через 1-2 года после процедуры в нашей студии) — 50% от стоимости работы</span>
                   </div>
                 </div>
                 <div class="price-makeup__item">
-                  <div class="price-makeup__box">
-                    <img class="price-makeup__img" src="images/permanent_makeup/15.jpg" alt="Перманентный макияж бровей">
-                    <div class="price-makeup__box-text">
-                      <span class="price-makeup__desc">Перекрытие и исправление некачественного перманентного макияжа</span>
-                      <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4200 р.</span>
-                    </div>
+                  <img class="price-makeup__img" src="images/permanent_makeup/15.jpg" alt="Перманентный макияж бровей">
+                  <div class="price-makeup__box-text">
+                    <span class="price-makeup__desc">Перекрытие и исправление некачественного перманентного макияжа</span>
+                    <span class="price-makeup__price"><span class="price-makeup__dash">— </span> 4200 р.</span>
                   </div>
                 </div>
               </div>

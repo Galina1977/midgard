@@ -7,6 +7,7 @@
 @import "components/header";
 @import "components/footer";
 @import "components/scroller";
+@import "components/Logo";
 @import "components/btn";
 @import "components/btn-link";
 @import "components/title";
@@ -20,7 +21,7 @@
 @import "components/info-subject";
 @import "components/sketch";
 @import "components/comments";
-@import "components/file";
+@import "components/file-upload";
 @import "components/user";
 @import "components/dots-menu";
 @import "components/slogan-title";
@@ -34,5 +35,3 @@
 
 @import "permanent_makeup/features";
 @import "permanent_makeup/price-makeup";
-
-@import "tattoo_removal/tattoo-removal";

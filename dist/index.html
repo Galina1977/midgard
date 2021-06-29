@@ -20,62 +20,45 @@
       </svg>
     </a>
     <div class="container">
-      <div class="header-top" style="background-image: url(images/header/img_bg.png);">
-        <div class="header-top__inner">
-          <div class="header-top__content">
-            <a class="Logo" href="#!">
-              <img class="Logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
-            </a>
-            <div class="header-top__info">
-              <p class="header-top__title">Тату-салон в Красноярске</p>
-              <p class="header-top__text">работает c 2011 года</p>
-            </div>
-          </div>
-          <div class="header-top__box-tel">
-            <a class="header-top__tel" href="tel:2507475">Звоните:
-              <span>250-74-75</span>
-            </a>
-          </div>
-          <div class="box-hidden">
-            <a class="box-hidden__tel" href="tel:2507475">
-              <svg class="box-hidden__tel-svg">
-                <use xlink:href="images/icon/phone-header.svg#phone-header"></use>
-              </svg>
-            </a>
-            <button class="menu-btn" type="button">
-              <svg class="menu-btn__svg">
-                <use xlink:href="images/icon/menu-btn.svg#menu-btn"></use>
-              </svg>
-            </button>
+      <div class="header__top" style="background-image: url(images/header/img_bg.png);">
+        <div class="header__inner">
+          <a class="Logo" href="#!">
+            <img class="Logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
+          </a>
+          <a class="header__tel" href="tel:2507475">Звоните:
+            <span class="header__number">250-74-75</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__mobile-wrapper">
+          <div class="mobile-overflow">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--active">
+                  <a class="menu__link menu__link--active" href="#!">Татуировка</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="http://localhost:3000/permanent-makeup.html" target="_blank">Перманентный макияж</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#!">Пирсинг</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#!">Лазерное удаление</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-bottom">
-      <div class="container">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--active">
-              <a class="menu__link menu__link--active" href="#!">Татуировка</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="http://localhost:3000/permanent-makeup.html" target="_blank">Перманентный макияж</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="http://localhost:3000/piercing.html" target="_blank">Пирсинг</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="http://localhost:3000/tattoo-removal.html" target="_blank">Лазерное удаление</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!--/.header-bottom-->
   </header>
   <main class="main">
     <!--  -->
-    <div class="video-tattoo" style="background-image: url(images/video_tattoo/img_bg.jpg);">
+    <div class="video-tattoo" style="background-image: url(images/video_tattoo/video.jpeg);">
       <div class="container">
         <div class="video-tattoo__inner">
           <p class="video-tattoo__text">
@@ -95,14 +78,14 @@
     <div class="about-tattoo" style="background-image: url(images/about/sloy.png);">
       <div class="container">
         <div class="about-tattoo__inner">
-          <div class="informative-card animate__animated wow animate__fadeInLeft" data-wow-delay="0.1s" style="background-image: url(images/about/img-1.png);">
+          <div class="about-tattoo__informative-card informative-card animate__animated wow animate__fadeInLeft" data-wow-delay="0.1s" style="background-image: url(images/about/3.jpg);">
             <div class="informative-card__box">
               <div class="informative-card__subject">Огромный опыт в татуировке</div>
               <p class="informative-card__text">Работаем уже более 7 лет и являемся одним из самых опытных тату-салонов в Красноярске</p>
               <p class="informative-card__text">В команде Midgard сегодня работает 7 тату-мастеров по разным направлениям: от "олд скула" до "реализма". Это гарантирует высочайшее качество любой татуировки и индивидуальный подход</p>
             </div>
           </div>
-          <div class="informative-card animate__animated wow animate__fadeInRight" data-wow-delay="0.3s" style="background-image: url(images/about/img-2.png);">
+          <div class="about-tattoo__informative-card informative-card animate__animated wow animate__fadeInRight" data-wow-delay="0.3s" style="background-image: url(images/about/1.jpg);">
             <div class="informative-card__box">
               <div class="informative-card__subject">Работаем официально, одни из немногих</div>
               <p class="informative-card__text">Мы делаем свою работу официально, соблюдая все требования. Успешно проходим любые проверки,установленные законодательством Российской Федерации</p>
@@ -358,13 +341,14 @@
               </label>
             </form>
             <a class="sketch__link" href="#!"> Ваши данные в безопасности</a>
-            <form class="upload-form">
-              <input type="file" class="upload-form__input visually-hidden" name="upload-image" id="upload-image">
-              <label class="upload-form__label" for="upload-image">
-                <span class="upload-form__label-file"></span>
-                <span class="upload-form__label-caption">Прикрепить изображение</span>
-              </label>
-              <button class="upload-form__submit" type="submit">Узнать цену</button>
+            <form class="sketch__form">
+              <div class="file-upload">
+                <label class="file-upload__label">
+                  <input class="file-upload__input" type="file">
+                  <span class="file-upload__text">Прикрепить файл</span>
+                </label>
+                <button class="file-upload__submit" type="submit">Узнать цену</button>
+              </div>
             </form>
           </div>
           <div class="comments">
@@ -404,7 +388,7 @@
                         <svg class="user__svg like">
                           <use xlink:href="images/icon/like.svg#like"></use>
                         </svg>
-                        <span class="user__num">51</span>
+                        <span class="user__num">36</span>
                       </a>
                       <a class="user__link" href="#!">
                         <svg class="user__svg chat">

@@ -1,9 +1,4 @@
 $(function () {
-  $(".menu-btn").on("click", function () {
-    $(".menu__list").toggleClass("menu__list--active");
-    $("body").toggleClass("lock");
-  });
-
   $(".price-makeup__heading-drop").on("click", function () {
     $(this).next().slideToggle();
     $(this).toggleClass("price-makeup__heading-drop--active");
@@ -76,21 +71,16 @@ $(function () {
     });
   });
 
+  $(".features__menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr("href"),
+      top = $(id).offset().top;
+    $("body,html").animate({ scrollTop: top }, 1500);
+    //1500  время скролла..чем больше тем медленней
+  });
+
   new WOW().init();
   var wow = new WOW({
     mobile: false,
   });
 });
-
-var uploadImageInput = document.querySelector("#upload-image");
-var uploadFileNameElement = document.querySelector(".upload-form__label-file");
-
-uploadImageInput.addEventListener("change", fileSelectHandler);
-
-function fileSelectHandler(evt) {
-  var file = uploadImageInput.files[0];
-
-  if (file) {
-    uploadFileNameElement.textContent = file.name;
-  }
-}

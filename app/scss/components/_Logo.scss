@@ -1,0 +1,16 @@
+.Logo {
+  display: block;
+  max-width: 423px;
+  max-height: 121px;
+  &__img {
+    max-width: 100%;
+    max-height: 1100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 820px) {
+  .Logo {
+    display: none;
+  }
+}
