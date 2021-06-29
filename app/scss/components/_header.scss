@@ -51,6 +51,10 @@
     font-size: 37px;
     line-height: 45px;
     color: #fff;
+    transition: color 0.4s;
+    &:hover {
+      color: $accent;
+    }
   }
   &__bottom {
     background-color: #2d2d2d;
