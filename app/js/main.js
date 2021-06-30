@@ -4,10 +4,6 @@ $(function () {
     $(this).toggleClass("price-makeup__heading-drop--active");
   });
 
-  $(".dots__click").on("click", function () {
-    $(this).toggleClass("active");
-  });
-
   $(".tabs__item").on("click", function (e) {
     e.preventDefault();
     $(".tabs__item").removeClass("tabs__item--active");
@@ -80,7 +76,4 @@ $(function () {
   });
 
   new WOW().init();
-  var wow = new WOW({
-    mobile: false,
-  });
 });

@@ -88,6 +88,11 @@
   .security__title {
     margin-bottom: 30px;
   }
+  .animate__animated.animate__flipInX {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
 }
 
 @media (max-width: 360px) {
