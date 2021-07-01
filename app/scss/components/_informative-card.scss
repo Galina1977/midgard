@@ -52,6 +52,16 @@
   }
 }
 
+@media (max-width: 860px) {
+  .informative-card {
+    .animate__animated.animate__fadeInLeft {
+      transition-property: none !important;
+      transform: none !important;
+      animation: none !important;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .informative-card {
     padding: 20px 0;
