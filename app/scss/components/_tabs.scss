@@ -1,54 +1,74 @@
 .tabs {
-  &__top {
-    max-width: 480px;
-    padding-bottom: 2px;
-    border-bottom: 3px solid $default;
-    @extend%raleway-600;
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 40px;
-  }
-  &__item {
-    display: inline-block;
-    color: $default;
-    & + .tabs__item {
-      margin-left: 80px;
-    }
-  }
-  &__item--active {
-    color: $bg;
-    padding-bottom: 2px;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: -7px;
-      right: 0;
-      width: 120px;
-      height: 3px;
-      background-color: $bg;
-    }
-  }
-  &__svg {
-    width: 18px;
-    height: 17px;
-    fill: #c5750b;
-    margin-left: 5px;
-  }
-  &__content-item {
-    display: none;
-    &.tabs__content-item--active {
-      display: block;
-    }
-  }
+   &__top {
+      max-width: 480px;
+      padding-bottom: 2px;
+      border-bottom: 3px solid $default;
+      @extend%raleway-600;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 40px;
+   }
+   &__item {
+      display: inline-block;
+      color: $default;
+      & + .tabs__item {
+         margin-left: 80px;
+      }
+   }
+   &__img {
+      width: 100%;
+      min-height: 338px;
+   }
+   &__item--active {
+      color: $bg;
+      padding-bottom: 2px;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: -5px;
+         left: -7px;
+         right: 0;
+         width: 120px;
+         height: 3px;
+         background-color: $bg;
+      }
+   }
+   &__svg {
+      width: 18px;
+      height: 17px;
+      fill: #c5750b;
+      margin-left: 5px;
+   }
+   &__content-item {
+      display: none;
+      &.tabs__content-item--active {
+         display: block;
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .tabs {
+      &__img {
+         min-height: 261px;
+      }
+   }
 }
 
 @media (max-width: 480px) {
-  .tabs__top {
-    margin-bottom: 10px;
-  }
-  .tabs__item + .tabs__item {
-    margin-left: 30px;
-  }
+   .tabs__top {
+      margin-bottom: 10px;
+   }
+   .tabs__item + .tabs__item {
+      margin-left: 30px;
+   }
+}
+
+@media (max-width: 360px) {
+   .tabs {
+      &__img {
+         min-height: 190px;
+      }
+   }
 }

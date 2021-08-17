@@ -1,16 +1,25 @@
 .Logo {
-  display: block;
-  max-width: 423px;
-  max-height: 121px;
-  &__img {
-    max-width: 100%;
-    max-height: 1100%;
-    object-fit: cover;
-  }
+   display: block;
+   &__img {
+      max-width: 423px;
+      height: 121px;
+      object-fit: cover;
+   }
+   &-mobile {
+      display: none;
+   }
 }
 
 @media (max-width: 860px) {
-  .Logo {
-    display: none;
-  }
+   .Logo {
+      display: none;
+      &__img {
+         height: 75px;
+      }
+      &-mobile {
+         display: block;
+         text-align: center;
+         margin-top: 25px;
+      }
+   }
 }

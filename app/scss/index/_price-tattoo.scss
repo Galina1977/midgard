@@ -1,167 +1,167 @@
 .price-tattoo {
-  padding-top: 70px;
-  background-color: #2d2d2d;
-  &__items {
-    padding: 0 50px;
-    margin-bottom: 70px;
-  }
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-  }
-  &__item {
-    padding: 95px 5px 5px 5px;
-    min-height: auto;
-    text-align: center;
-    @extend%raleway-500;
-    position: relative;
-    &::before {
-      content: "";
-      background-image: url("../images/price_tattoo/icon_1.png");
-      background-repeat: no-repeat;
-      width: 42px;
-      height: 68px;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    &--2::before {
-      content: "";
-      background-image: url("../images/price_tattoo/icon_2.png");
-      width: 56px;
-      height: 58px;
-    }
-    &--3::before {
-      content: "";
-      background-image: url("../images/price_tattoo/icon_3.png");
-      width: 65px;
-      height: 58px;
-    }
-    &--4::before {
-      content: "";
-      background-image: url("../images/tattoo_removal/icon_4.png");
-      width: 56px;
-      height: 58px;
-    }
-  }
-  &__title {
-    max-width: 475px;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 20px;
-    &--3 {
-      max-width: 740px;
-      margin: 0 auto 20px;
-    }
-  }
-  &__subtitle {
-    display: block;
-    max-width: 315px;
-    min-height: auto;
-    @extend%raleway-500;
-    line-height: 23px;
-    opacity: 0.38;
-    margin: 0 auto;
-    &--3 {
-      max-width: 680px;
-    }
-    &--4 {
-      max-width: 548px;
-      margin-bottom: 20px;
-      &:last-child {
-        margin-bottom: 0;
+   padding-top: 70px;
+   background-color: #2d2d2d;
+   &__items {
+      padding: 0 50px;
+      margin-bottom: 70px;
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+   }
+   &__item {
+      padding: 95px 5px 5px 5px;
+      min-height: auto;
+      text-align: center;
+      @extend%raleway-500;
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url("../images/price_tattoo/icon_1.png");
+         background-repeat: no-repeat;
+         width: 42px;
+         height: 68px;
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
       }
-    }
-  }
-  &__desc {
-    display: block;
-    max-width: 575px;
-    @extend%raleway-500;
-    line-height: 23px;
-    margin: 0 auto 20px;
-  }
-  &__bottom {
-    background-color: $bg;
-    padding: 70px 0;
-  }
-  &__container {
-    max-width: 1240px;
-  }
-  &__text {
-    font-size: 33px;
-    line-height: 43px;
-    text-align: center;
-  }
-  &__span {
-    display: inline-block;
-    @extend%raleway-900;
-  }
-  .info-subject {
-    margin-bottom: 50px;
-  }
+      &--2::before {
+         content: "";
+         background-image: url("../images/price_tattoo/icon_2.png");
+         width: 56px;
+         height: 58px;
+      }
+      &--3::before {
+         content: "";
+         background-image: url("../images/price_tattoo/icon_3.png");
+         width: 65px;
+         height: 58px;
+      }
+      &--4::before {
+         content: "";
+         background-image: url("../images/tattoo_removal/icon_4.png");
+         width: 56px;
+         height: 58px;
+      }
+   }
+   &__title {
+      max-width: 475px;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      &--3 {
+         max-width: 740px;
+         margin: 0 auto 20px;
+      }
+   }
+   &__subtitle {
+      display: block;
+      max-width: 315px;
+      min-height: auto;
+      @extend%raleway-500;
+      line-height: 23px;
+      opacity: 0.38;
+      margin: 0 auto;
+      &--3 {
+         max-width: 680px;
+      }
+      &--4 {
+         max-width: 548px;
+         margin-bottom: 20px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   &__desc {
+      display: block;
+      max-width: 575px;
+      @extend%raleway-500;
+      line-height: 23px;
+      margin: 0 auto 20px;
+   }
+   &__bottom {
+      background-color: $bg;
+      padding: 70px 0;
+   }
+   &__container {
+      max-width: 1240px;
+   }
+   &__text {
+      font-size: 33px;
+      line-height: 43px;
+      text-align: center;
+   }
+   &__span {
+      display: inline-block;
+      @extend%raleway-900;
+   }
+   .info-subject {
+      margin-bottom: 50px;
+   }
 }
 
 @media (max-width: 1200px) {
-  .price-tattoo__inner {
-    display: block;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  .price-tattoo__item {
-    padding-top: 75px;
-    margin-bottom: 60px;
-  }
-  .price-tattoo__item--3 {
-    margin-bottom: 0;
-  }
-  .price-tattoo__title {
-    margin: 0 auto 15px;
-  }
+   .price-tattoo__inner {
+      display: block;
+      padding: 0;
+      margin-bottom: 0;
+   }
+   .price-tattoo__item {
+      padding-top: 75px;
+      margin-bottom: 60px;
+   }
+   .price-tattoo__item--3 {
+      margin-bottom: 0;
+   }
+   .price-tattoo__title {
+      margin: 0 auto 15px;
+   }
 }
 
 @media (max-width: 640px) {
-  .price-tattoo {
-    .info-subject__title {
-      text-align: center;
-    }
-  }
-  .price-tattoo__items {
-    padding: 0 5px;
-    margin-bottom: 32px;
-  }
+   .price-tattoo {
+      .info-subject__title {
+         text-align: center;
+      }
+   }
+   .price-tattoo__items {
+      padding: 0 5px;
+      margin-bottom: 32px;
+   }
 }
 
 @media (max-width: 480px) {
-  .price-tattoo {
-    padding-top: 45px;
-  }
-  .price-tattoo .info-subject {
-    margin-bottom: 25px;
-  }
-  .price-tattoo__bottom {
-    padding: 40px 0;
-  }
-  .price-tattoo__text {
-    font-size: 25px;
-    line-height: 30px;
-  }
+   .price-tattoo {
+      padding-top: 45px;
+   }
+   .price-tattoo .info-subject {
+      margin-bottom: 25px;
+   }
+   .price-tattoo__bottom {
+      padding: 40px 0;
+   }
+   .price-tattoo__text {
+      font-size: 25px;
+      line-height: 30px;
+   }
 }
 
 @media (max-width: 360px) {
-  .price-tattoo__title {
-    font-size: 19px;
-    line-height: 27px;
-    margin-bottom: 10px;
-  }
-  .price-tattoo__subtitle {
-    font-size: 17px;
-    line-height: 21px;
-  }
-  .price-tattoo__desc {
-    font-size: 16px;
-    line-height: 21px;
-    margin-bottom: 10px;
-  }
+   .price-tattoo__title {
+      font-size: 19px;
+      line-height: 27px;
+      margin-bottom: 10px;
+   }
+   .price-tattoo__subtitle {
+      font-size: 17px;
+      line-height: 21px;
+   }
+   .price-tattoo__desc {
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 10px;
+   }
 }

@@ -1,107 +1,110 @@
 .price-makeup {
-  padding: 55px 0 80px;
-  &__heading {
-    padding-top: 30px;
-    @extend%raleway-700;
-    font-size: 20px;
-    line-height: 26px;
-    color: #4ec9f8;
-    margin-bottom: 45px;
-  }
-  &__heading-drop {
-    pointer-events: none;
-  }
-  &__inner {
-    display: flex;
-  }
-  &__item {
-    max-width: 245px;
-    min-height: auto;
-    text-align: center;
-    margin-bottom: 40px;
-    & + & {
-      margin-left: 110px;
-    }
-  }
-  &__img {
-    max-width: 152px;
-    height: 152px;
-    object-fit: cover;
-    border: 3px solid #4ec9f8;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-  }
-  &__desc {
-    @extend%raleway-500;
-    font-size: 17px;
-    line-height: 27px;
-    color: $default;
-    margin-bottom: 5px;
-  }
-  &__price {
-    @extend%raleway-900;
-    font-size: 25px;
-    line-height: 27px;
-    color: $default;
-    margin-bottom: 60px;
-  }
-  &__dash {
-    font-size: 18px;
-    line-height: 28px;
-  }
+   padding: 55px 0 80px;
+   &__heading {
+      padding-top: 30px;
+      @extend%raleway-700;
+      font-size: 20px;
+      line-height: 26px;
+      color: #4ec9f8;
+      margin-bottom: 45px;
+   }
+   &__heading-drop {
+      pointer-events: none;
+   }
+   &__inner {
+      display: flex;
+   }
+   &__item {
+      max-width: 245px;
+      min-height: auto;
+      text-align: center;
+      margin-bottom: 40px;
+      & + & {
+         margin-left: 110px;
+      }
+   }
+   &__img {
+      max-width: 152px;
+      height: 152px;
+      object-fit: cover;
+      border: 3px solid #4ec9f8;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+   }
+   &__desc {
+      @extend%raleway-500;
+      font-size: 17px;
+      line-height: 27px;
+      color: $default;
+      margin-bottom: 5px;
+   }
+   &__price {
+      @extend%raleway-900;
+      font-size: 25px;
+      line-height: 27px;
+      color: $default;
+      margin-bottom: 60px;
+   }
+   &__dash {
+      font-size: 18px;
+      line-height: 28px;
+   }
 }
 
 @media (max-width: 1200px) {
-  .price-makeup {
-    &__inner {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    &__item {
-      & + & {
-        margin-left: 0;
+   .price-makeup {
+      &__inner {
+         flex-wrap: wrap;
+         justify-content: space-around;
       }
-    }
-    &__heading {
-      text-align: center;
-    }
-  }
+      &__item {
+         & + & {
+            margin-left: 0;
+         }
+      }
+      &__heading {
+         text-align: center;
+      }
+   }
 }
 
 @media (max-width: 768px) {
-  .price-makeup {
-    padding: 20px 0 30px;
-    &__heading-drop {
-      padding: 15px;
-      pointer-events: auto;
-      position: relative;
-      &::after {
-        content: "";
-        background-image: url("../images/permanent_makeup/angle_bottom .svg");
-        background-repeat: no-repeat;
-        width: 12px;
-        height: 8px;
-        position: absolute;
-        right: 9px;
-        top: 25px;
-        transition: transform 0.1s;
+   .price-makeup {
+      padding: 20px 0 30px;
+      &__heading-drop {
+         padding: 15px;
+         pointer-events: auto;
+         position: relative;
+         &::after {
+            content: "";
+            background-image: url("../images/permanent_makeup/angle_bottom .svg");
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 8px;
+            position: absolute;
+            right: 9px;
+            top: 25px;
+            transition: transform 0.1s;
+         }
       }
-    }
-    &__box-hidden {
-      display: none;
-    }
-    &__img {
-      max-width: 110px;
-      height: 110px;
-    }
-  }
-  .price-makeup__heading-drop--active::after {
-    transform: rotate(180deg);
-  }
+      &__box-hidden {
+         display: none;
+      }
+      &__img {
+         max-width: 110px;
+         height: 110px;
+      }
+      &__price {
+         margin-bottom: 0;
+      }
+   }
+   .price-makeup__heading-drop--active::after {
+      transform: rotate(180deg);
+   }
 }
 
 @media (max-width: 360px) {
-  .price-makeup {
-    padding: 0;
-  }
+   .price-makeup {
+      padding: 0;
+   }
 }
