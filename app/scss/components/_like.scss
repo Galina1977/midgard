@@ -1,0 +1,24 @@
+.like {
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/thumbs-up-regular.svg");
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 22px;
+      top: 0;
+      left: 0;
+   }
+   &--active::before {
+      background-image: url("../images/thumbs-up-solid.svg");
+   }
+   &__num {
+      @extend%raleway-400;
+      font-size: 15px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: $default;
+      margin-top: 24px;
+   }
+}

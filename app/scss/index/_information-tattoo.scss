@@ -2,20 +2,9 @@
    min-height: auto;
    background-color: #000;
    &__inner {
-      padding: 99px 0 100px 0;
+      @include adaptiv-value("padding-top", 100, 50, 1);
+      @include adaptiv-value("padding-bottom", 100, 50, 1);
       position: relative;
       z-index: 20;
-   }
-}
-
-@media (max-width: 1220px) {
-   .information-tattoo__inner {
-      padding: 99px 0 50px 0;
-   }
-}
-
-@media (max-width: 576px) {
-   .information-tattoo__inner {
-      padding: 65px 0 50px 0;
    }
 }

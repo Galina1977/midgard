@@ -1,36 +1,13 @@
 .slogan-title {
-  max-width: 1167px;
-  padding: 0 5px;
-  font-size: 45px;
-  line-height: 55px;
-  text-align: center;
-  text-shadow: 2px 3px 5px #000;
-  margin-bottom: 50px;
-  &__span {
-    display: inline-block;
-    @extend%raleway-900;
-  }
-}
-
-@media (max-width: 992px) {
-  .slogan-title {
-    font-size: 37px;
-    line-height: 49px;
-    margin-bottom: 35px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slogan-title {
-    font-size: 29px;
-    line-height: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .slogan-title {
-    text-align: left;
-    font-size: 25px;
-    line-height: 35px;
-  }
+   max-width: 1167px;
+   padding: 0 5px;
+   @include adaptiv-value("font-size", 45, 28, 1);
+   line-height: 55/45 * 100%;
+   text-align: center;
+   text-shadow: 2px 3px 5px #000;
+   @include adaptiv-value("margin-bottom", 50, 45, 1);
+   &__span {
+      display: inline-block;
+      @extend%raleway-900;
+   }
 }

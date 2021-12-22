@@ -1,6 +1,5 @@
 .photo-tattoo {
    display: grid;
-   min-height: 475px;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(2, 1fr);
    width: 100%;
@@ -10,7 +9,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-      min-height: 228px;
+      @include adaptiv-value("min-height", 228, 160, 1);
       &:nth-child(2) {
          grid-row: span 2;
       }

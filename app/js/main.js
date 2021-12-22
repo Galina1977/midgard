@@ -1,10 +1,28 @@
 $(function () {
+
+   $('body').append('<div class="upbtn"></div>');
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+         $('.upbtn').css({
+            bottom: '15px'
+         });
+      } else {
+         $('.upbtn').css({
+            bottom: '-80px'
+         });
+      }
+   });
+   $('.upbtn').on('click', function () {
+      $('html, body').animate({
+         scrollTop: 0
+      }, 500);
+      return false;
+   });
+
    $(".header-bottom__burger").click(function (event) {
       $(".header-bottom__burger, .menu ").toggleClass("active");
       $("body").toggleClass("lock");
    });
-
-
 
    $(".price-makeup__heading-drop").on("click", function () {
       $(this).next().slideToggle();
@@ -55,25 +73,6 @@ $(function () {
       ],
    });
 
-   $(document).ready(function () {
-      $(window).scroll(function () {
-         if ($(this).scrollTop() > 0) {
-            $("#scroller").fadeIn();
-         } else {
-            $("#scroller").fadeOut();
-         }
-      });
-      $("#scroller").click(function () {
-         $("body,html").animate(
-            {
-               scrollTop: 0,
-            },
-            400
-         );
-         return false;
-      });
-   });
-
    $(".features__menu").on("click", "a", function (event) {
       event.preventDefault();
       var id = $(this).attr("href"),
@@ -82,6 +81,9 @@ $(function () {
       //1500  время скролла..чем больше тем медленней
    });
 
+   $(".like").on("click", function () {
+      $(this).toggleClass("like--active");
+   });
 
    new WOW().init();
 });

@@ -3,14 +3,13 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "_ui";
 
 @import "components/header";
 @import "components/footer";
-@import "components/scroller";
 @import "components/Logo";
 @import "components/btn";
 @import "components/btn-link";
-@import "components/title";
 @import "components/text";
 @import "components/form";
 @import "components/informative-card";
@@ -22,8 +21,9 @@
 @import "components/sketch";
 @import "components/comments";
 @import "components/file-upload";
-@import "components/user";
 @import "components/slogan-title";
+@import "components/like";
+@import "components/info-icon";
 
 @import "index/video-tattoo";
 @import "index/about-tattoo";
@@ -34,3 +34,4 @@
 
 @import "permanent_makeup/features";
 @import "permanent_makeup/price-makeup";
+@import "permanent_makeup/permanent-makeup-card";

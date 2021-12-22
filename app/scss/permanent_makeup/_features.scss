@@ -1,6 +1,10 @@
 .features {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    width: 100%;
-   min-height: auto;
+   @include adaptiv-value("min-height", 812, 568, 1);
    background-repeat: no-repeat;
    background-position: top center;
    background-size: cover;
@@ -17,12 +21,13 @@
       z-index: 0;
    }
    &__inner {
-      padding: 230px 0;
+      padding: 100px 0;
       position: relative;
       z-index: 5;
    }
    &__list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       column-gap: 25px;
    }
@@ -31,39 +36,31 @@
       max-width: 205px;
       min-height: auto;
       text-align: center;
-      &:hover .features__link,
-      &:hover .features__span {
-         transition: color 0.4s;
-         color: $bg;
+      &:hover {
+         .features__link,
+         .features__span {
+            transition: color 0.4s;
+            color: $bg;
+         }
       }
    }
    &__link {
       @extend%raleway-900;
-      font-size: 70px;
-      line-height: 80px;
+      @include adaptiv-value("font-size", 70, 40, 1);
+      line-height: 80/70 * 100%;
       color: $default;
    }
    &__span {
       @extend%raleway-900;
-      font-size: 22px;
-      line-height: 30px;
+      @include adaptiv-value("font-size", 22, 18, 1);
+      line-height: 30/22 * 100%;
       color: $default;
       padding-top: 20px;
    }
 }
 
-@media (max-width: 1200px) {
-   .features {
-      &__link {
-         font-size: 60px;
-         line-height: 70px;
-      }
-   }
-}
-
 @media (max-width: 992px) {
    .features__list {
-      flex-wrap: wrap;
       justify-content: space-around;
    }
    .features__item {
@@ -75,35 +72,7 @@
 }
 
 @media (max-width: 480px) {
-   .features {
-      &__inner {
-         padding: 130px 0;
-      }
-      &__span {
-         font-size: 19px;
-         line-height: 23px;
-         padding-top: 4px;
-      }
-      &__link {
-         font-size: 55px;
-         line-height: 50px;
-      }
-      .slogan-title {
-         text-align: left;
-         font-size: 21px;
-         line-height: 29px;
-      }
-   }
-}
-
-@media (max-width: 360px) {
-   .features {
-      &__inner {
-         padding: 95px 0;
-      }
-      &__link {
-         font-size: 40px;
-         line-height: 45px;
-      }
+   .slogan-title {
+      text-align: left;
    }
 }

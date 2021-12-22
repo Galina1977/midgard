@@ -1,6 +1,10 @@
 .video-tattoo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    width: 100%;
-   min-height: 812px;
+   @include adaptiv-value("min-height", 812, 568, 1);
    background-repeat: no-repeat;
    background-position: top center;
    background-size: cover;
@@ -17,15 +21,14 @@
       z-index: 0;
    }
    &__inner {
-      padding-top: 125px;
       position: relative;
       z-index: 5;
    }
    &__text {
       max-width: 1167px;
       padding: 0 5px;
-      font-size: 45px;
-      line-height: 55px;
+      @include adaptiv-value("font-size", 45, 25, 1);
+      line-height: 55/45 * 100%;
       text-shadow: 2px 3px 5px #000;
       text-align: center;
       margin-bottom: 50px;
@@ -39,8 +42,8 @@
       align-items: center;
    }
    &__img {
-      width: 121px;
-      height: 121px;
+      @include adaptiv-value("width", 121, 85, 1);
+      @include adaptiv-value("height", 121, 85, 1);
       object-fit: cover;
       margin: 0 30px;
    }
@@ -52,25 +55,8 @@
    }
 }
 
-@media (max-width: 992px) {
-   .video-tattoo {
-      min-height: 570px;
-      &__text {
-         font-size: 37px;
-         line-height: 49px;
-         margin-bottom: 35px;
-      }
-   }
-}
-
 @media (max-width: 860px) {
    .video-tattoo {
-      min-height: 492px;
-      &__text {
-         font-size: 29px;
-         line-height: 32px;
-         margin-bottom: 25px;
-      }
       &__desc {
          display: none;
       }
@@ -80,31 +66,7 @@
 @media (max-width: 640px) {
    .video-tattoo {
       &__img {
-         width: 90px;
-         height: 90px;
          margin: 0;
-      }
-   }
-}
-
-@media (max-width: 480px) {
-   .video-tattoo {
-      min-height: 356px;
-      &__text {
-         font-size: 23px;
-         line-height: 28px;
-      }
-      &__img {
-         width: 70px;
-         height: 70px;
-      }
-   }
-}
-
-@media (max-width: 360px) {
-   .video-tattoo {
-      &__inner {
-         padding-top: 110px;
       }
    }
 }

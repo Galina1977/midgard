@@ -1,0 +1,40 @@
+.upbtn {
+   @include adaptiv-value("width", 60, 45, 1);
+   @include adaptiv-value("height", 60, 45, 1);
+   position: fixed;
+   bottom: -80px;
+   left: 20px;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-image: url("../images/icon/arrow-up.svg");
+   z-index: 10;
+   cursor: pointer;
+}
+
+.title {
+   @extend%raleway-300;
+   @include adaptiv-value("font-size", 35, 20, 1);
+   line-height: 45/35 * 100%;
+   &__span {
+      display: inline-block;
+      @extend%raleway-900;
+   }
+}
+
+.banner {
+   background-color: $bg;
+   @include adaptiv-value("padding-top", 70, 40, 1);
+   @include adaptiv-value("padding-bottom", 70, 40, 1);
+   &__container {
+      max-width: 1240px;
+   }
+   &__text {
+      @include adaptiv-value("font-size", 33, 20, 1);
+      line-height: 43/33 * 100%;
+      text-align: center;
+   }
+   &__span {
+      display: inline-block;
+      @extend%raleway-900;
+   }
+}

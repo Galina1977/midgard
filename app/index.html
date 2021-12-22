@@ -13,15 +13,10 @@
 </head>
 
 <body>
-   <header id="header" class="header">
-      <a class="scroller" id="scroller" href="#">
-         <svg class="scroller__arrow">
-            <use xlink:href="images/icon/arrow.svg#arrow"></use>
-         </svg>
-      </a>
+   <header class="header">
       <div class="container">
          <div class="header-top">
-            <a class="Logo" href="#header">
+            <a class="header-top__Logo Logo" href="#header">
                <img class="Logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
             </a>
             <a class="header-top__tel" href="tel:2507475">Звоните:
@@ -37,7 +32,7 @@
             <nav class="menu">
                <ul class="menu__list">
                   <li class="menu__item menu__item--active">
-                     <a class="menu__link menu__link--active" href="#!">Татуировка</a>
+                     <span>Татуировка</span>
                   </li>
                   <li class="menu__item">
                      <a class="menu__link" href="http://galyapx5.beget.tech/permanent-makeup.html" target="_blank">Перманентный макияж</a>
@@ -49,16 +44,13 @@
                      <a class="menu__link" href="#!">Лазерное удаление</a>
                   </li>
                </ul>
-               <a class="Logo Logo-mobile" href="#header">
-                  <img class="Logo__img" src="images/header/logo.png" alt="Логотип тату салона Midgard">
-               </a>
             </nav>
          </div>
       </div>
    </header>
 
    <main class="main">
-      <div class="video-tattoo" style="background-image: url(images/video_tattoo/video.webp);">
+      <div class="video-tattoo" style="background-image: url(images/video_tattoo/video.jpg);">
          <div class="container">
             <div class="video-tattoo__inner">
                <p class="video-tattoo__text">
@@ -85,7 +77,7 @@
                      <p class="informative-card__text">В команде Midgard сегодня работает 7 тату-мастеров по разным направлениям: от "олд скула" до "реализма". Это гарантирует высочайшее качество любой татуировки и индивидуальный подход</p>
                   </div>
                </div>
-               <div class="informative-card animate__animated wow animate__fadeInLeft" data-wow-delay="0.3s" style="background-image: url(images/about/1.jpg);">
+               <div class="informative-card animate__animated wow animate__fadeInRight" data-wow-delay="0.3s" style="background-image: url(images/about/1.jpg);">
                   <div class="informative-card__box">
                      <div class="informative-card__subject">Работаем официально, одни из немногих</div>
                      <p class="informative-card__text">Мы делаем свою работу официально, соблюдая все требования. Успешно проходим любые проверки,установленные законодательством Российской Федерации</p>
@@ -192,8 +184,8 @@
          <div class="slider-tattoo__box animate__animated wow animate__fadeInUpBig" data-wow-delay="0.3s">
             <div class="slider-tattoo__wrapper" style="background-image: url(images/example_work/02.jpg);">
                <div class="slider-tattoo__inner">
-                  <div class="slider-tattoo__title">Can’t Stop, Won’t Stop</div>
-                  <div class="slider-tattoo__location">Can’t Stop, Won’t Stop</div>
+                  <div class="slider-tattoo__title">Cant Stop, Wont Stop</div>
+                  <div class="slider-tattoo__location">Cant Stop, Wont Stop</div>
                </div>
             </div>
          </div>
@@ -354,8 +346,7 @@
                <div class="comments">
                   <div class="comments__inner">
                      <div class="info-subject">
-                        <div class="info-subject__title title"><span class="title__span">Отзывы тех,</span> кто уже сделал
-                           татуировку у нас</div>
+                        <div class="info-subject__title title"><span class="title__span">Отзывы тех,</span> кто уже сделал татуировку у нас</div>
                         <p class="info-subject__text text">Более 70 мнений о нашей работе</p>
                      </div>
                      <div class="comments__item">
@@ -382,24 +373,21 @@
                               Не далее как вчера делала татуировку в этом салоне. Это моя первая татуировка и результатом я очень довольна. Спасибо ребятам за проведённую работу, выглядит все супер. Дали так же рекомендаций по уходу за рукой. Обязательно буду рекомендовать этот салон знакомым. И планирую вскором времени вернуться за новыми впечатлениями.
                            </p>
                            <div class="comments__content-bottom">
-                              <div class="user">
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg like">
-                                       <use xlink:href="images/icon/like.svg#like"></use>
-                                    </svg>
-                                    <span class="user__num">36</span>
-                                 </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg chat">
+                              <div class="comments__info-icon info-icon">
+                                 <button class="info-icon__item like">
+                                    <span class="like__num">36</span>
+                                 </button>
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/chat.svg#chat"></use>
                                     </svg>
-                                    <span class="user__num">5</span>
+                                    <span class="info-icon__num">5</span>
                                  </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg reload">
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/reload.svg#reload"></use>
                                     </svg>
-                                    <span class="user__num">0</span>
+                                    <span class="info-icon__num">0</span>
                                  </a>
                               </div>
                            </div>
@@ -430,24 +418,21 @@
                               Сегодня в этом салоне мне сделали мою первую татуировку! Давно хотела, но никак не решалась. В пятницу пришла в салон на консультацию, спасибо парням, они помогли мне определиться с рисунком и местом нанесения ! На процедуру записалась на воскресенье, и вот пошёл день "икс" волновалась жутко так как боялась, что будет больно. Но это было безболезненно)
                            </p>
                            <div class="comments__content-bottom">
-                              <div class="user">
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg like">
-                                       <use xlink:href="images/icon/like.svg#like"></use>
-                                    </svg>
-                                    <span class="user__num">56</span>
-                                 </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg chat">
+                              <div class="comments__info-icon info-icon">
+                                 <button class="info-icon__item like">
+                                    <span class="like__num">36</span>
+                                 </button>
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/chat.svg#chat"></use>
                                     </svg>
-                                    <span class="user__num">4</span>
+                                    <span class="info-icon__num">5</span>
                                  </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg reload">
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/reload.svg#reload"></use>
                                     </svg>
-                                    <span class="user__num">0</span>
+                                    <span class="info-icon__num">0</span>
                                  </a>
                               </div>
                            </div>
@@ -478,24 +463,21 @@
                               Сегодня с девушкой обзавелись парными тату. Мы очень довольны результатом)) Комфортная кушетка, огромный выбор чернил, аккуратный мастер - это всё про студию Мидгард)
                            </p>
                            <div class="comments__content-bottom">
-                              <div class="user">
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg like">
-                                       <use xlink:href="images/icon/like.svg#like"></use>
-                                    </svg>
-                                    <span class="user__num">29</span>
-                                 </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg chat">
+                              <div class="comments__info-icon info-icon">
+                                 <button class="info-icon__item like">
+                                    <span class="like__num">36</span>
+                                 </button>
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/chat.svg#chat"></use>
                                     </svg>
-                                    <span class="user__num">8</span>
+                                    <span class="info-icon__num">5</span>
                                  </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg reload">
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/reload.svg#reload"></use>
                                     </svg>
-                                    <span class="user__num">0</span>
+                                    <span class="info-icon__num">0</span>
                                  </a>
                               </div>
                            </div>
@@ -526,24 +508,21 @@
                               Решила сделать тату в этом салоне) так как до этого никогда не делала было страшновато) Но все прошло замечательно)Сергей отличный мастер)очень ему благодарна и давольна его работай))) Cпасибо Мидгард)))
                            </p>
                            <div class="comments__content-bottom">
-                              <div class="user">
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg like">
-                                       <use xlink:href="images/icon/like.svg#like"></use>
-                                    </svg>
-                                    <span class="user__num">31</span>
-                                 </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg chat">
+                              <div class="comments__info-icon info-icon">
+                                 <button class="info-icon__item like">
+                                    <span class="like__num">36</span>
+                                 </button>
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/chat.svg#chat"></use>
                                     </svg>
-                                    <span class="user__num">11</span>
+                                    <span class="info-icon__num">5</span>
                                  </a>
-                                 <a class="user__link" href="#!">
-                                    <svg class="user__svg reload">
+                                 <a class="info-icon__item" href="#!">
+                                    <svg class="info-icon__svg">
                                        <use xlink:href="images/icon/reload.svg#reload"></use>
                                     </svg>
-                                    <span class="user__num">0</span>
+                                    <span class="info-icon__num">0</span>
                                  </a>
                               </div>
                            </div>
@@ -555,7 +534,7 @@
          </div>
       </div>
 
-      <div class="acquaintance-tattoo" style="background-image: url(images/tattoo_2.webp);">
+      <div class="acquaintance-tattoo" style="background-image: url(images/tattoo_2.jpg);">
          <div class="container">
             <div class="acquaintance-tattoo__inner">
                <div class="sketch">

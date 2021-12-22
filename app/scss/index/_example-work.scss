@@ -1,15 +1,4 @@
 .example-work {
-   padding: 65px 0 100px;
-}
-
-@media (max-width: 768px) {
-   .example-work {
-      padding: 35px 0 50px;
-   }
-}
-
-@media (max-width: 360px) {
-   .example-work {
-      padding: 20px 0 30px;
-   }
+   @include adaptiv-value("padding-top", 120, 45, 1);
+   @include adaptiv-value("padding-bottom", 120, 35, 1);
 }

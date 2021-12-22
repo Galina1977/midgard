@@ -1,30 +1,18 @@
 .info-subject {
-  display: flex;
-  align-items: center;
-  margin-bottom: 55px;
-  &__title {
-    padding-right: 70px;
-  }
+   display: flex;
+   align-items: center;
+   @include adaptiv-value("margin-bottom", 55, 40, 1);
+   &__title {
+      padding-right: 70px;
+   }
 }
 
 @media (max-width: 768px) {
-  .info-subject {
-    display: block;
-  }
-  .info-subject__title {
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .info-subject {
-    margin-bottom: 35px;
-  }
-}
-
-@media (max-width: 480px) {
-  .info-subject {
-    margin-bottom: 25px;
-  }
+   .info-subject {
+      display: block;
+   }
+   .info-subject__title {
+      padding-right: 0;
+      margin-bottom: 20px;
+   }
 }

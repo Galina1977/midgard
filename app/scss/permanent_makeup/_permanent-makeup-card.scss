@@ -1,0 +1,10 @@
+.permanent-makeup-card {
+   @include adaptiv-value("padding-top", 150, 60, 1);
+   @include adaptiv-value("padding-bottom", 100, 60, 1);
+   min-height: auto;
+   background-color: #000;
+   &__btn-link {
+      text-align: center;
+      @include adaptiv-value("margin-top", 50, 20, 1);
+   }
+}

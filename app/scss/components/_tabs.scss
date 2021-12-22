@@ -17,7 +17,7 @@
    }
    &__img {
       width: 100%;
-      min-height: 338px;
+      @include adaptiv-value("min-height", 338, 190, 1);
    }
    &__item--active {
       color: $bg;
@@ -48,27 +48,11 @@
    }
 }
 
-@media (max-width: 576px) {
-   .tabs {
-      &__img {
-         min-height: 261px;
-      }
-   }
-}
-
 @media (max-width: 480px) {
    .tabs__top {
       margin-bottom: 10px;
    }
    .tabs__item + .tabs__item {
       margin-left: 30px;
-   }
-}
-
-@media (max-width: 360px) {
-   .tabs {
-      &__img {
-         min-height: 190px;
-      }
    }
 }

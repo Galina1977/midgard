@@ -1,159 +1,154 @@
 .footer {
-  padding: 60px 0 120px;
-  &__inner {
-    position: relative;
-    &::before {
-      content: "";
-      background-image: url("../images/footer/img_1.png");
-      background-repeat: no-repeat;
-      width: 465px;
-      height: 465px;
-      position: absolute;
-      top: 50px;
-      right: 31%;
-    }
-    &::after {
-      content: "";
-      background-image: url("../images/footer/img_2.png");
-      background-repeat: no-repeat;
-      width: 465px;
-      height: 465px;
-      position: absolute;
-      top: 50px;
-      right: 2%;
-    }
-  }
-  &__box-link {
-    text-align: center;
-  }
-  &__link {
-    display: inline-block;
-    @extend%raleway-700;
-    font-size: 18px;
-    line-height: 30px;
-    color: #1f50a3;
-    padding-right: 58px;
-    position: relative;
-    transition: all 0.3s;
-    &::after {
-      content: "";
-      background-image: url("../images/footer/right_arrow.svg");
-      background-repeat: no-repeat;
-      width: 45px;
-      height: 29px;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    &:hover {
-      color: $default;
+   @include adaptiv-value("padding-top", 60, 55, 1);
+   @include adaptiv-value("padding-bottom", 120, 70, 1);
+   &__inner {
+      position: relative;
+      &::before {
+         content: "";
+         background-image: url("../images/footer/img_1.png");
+         background-repeat: no-repeat;
+         width: 465px;
+         height: 465px;
+         position: absolute;
+         top: 50px;
+         right: 31%;
+      }
       &::after {
-        content: "";
-        background-image: url("../images/footer/right_arrow2.svg");
+         content: "";
+         background-image: url("../images/footer/img_2.png");
+         background-repeat: no-repeat;
+         width: 465px;
+         height: 465px;
+         position: absolute;
+         top: 50px;
+         right: 2%;
       }
-    }
-  }
+   }
+   &__box-link {
+      text-align: center;
+   }
+   &__link {
+      display: inline-block;
+      @extend%raleway-700;
+      font-size: 18px;
+      line-height: 30px;
+      color: #1f50a3;
+      padding-right: 58px;
+      position: relative;
+      transition: all 0.3s;
+      &::after {
+         content: "";
+         background-image: url("../images/footer/right_arrow.svg");
+         background-repeat: no-repeat;
+         width: 45px;
+         height: 29px;
+         position: absolute;
+         top: 0;
+         right: 0;
+      }
+      &:hover {
+         color: $default;
+         &::after {
+            content: "";
+            background-image: url("../images/footer/right_arrow2.svg");
+         }
+      }
+   }
 }
+
 .address {
-  max-width: 425px;
-  padding-top: 70px;
-  min-height: auto;
-  @extend%raleway-500;
-  font-style: normal;
-  &__item {
-    padding-left: 50px;
-    position: relative;
-    margin-bottom: 35px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &--adds {
-      &::before {
-        content: "";
-        background-image: url("../images/footer/map-marker.svg");
-        background-repeat: no-repeat;
-        width: 23px;
-        height: 33px;
-        position: absolute;
-        top: 20px;
-        left: 0;
+   max-width: 425px;
+   padding-top: 70px;
+   min-height: auto;
+   @extend%raleway-500;
+   font-style: normal;
+   &__item {
+      padding-left: 50px;
+      position: relative;
+      margin-bottom: 35px;
+      &:last-child {
+         margin-bottom: 0;
       }
-    }
-    &--tel {
-      &::before {
-        content: "";
-        background-image: url("../images/footer/phone_receiver.svg");
-        background-repeat: no-repeat;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 40px;
-        left: 0;
+      &--adds {
+         &::before {
+            content: "";
+            background-image: url("../images/footer/map-marker.svg");
+            background-repeat: no-repeat;
+            width: 23px;
+            height: 33px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+         }
       }
-    }
-  }
-  &__text {
-    opacity: 0.38;
-    font-size: 22px;
-    line-height: 32px;
-    margin-bottom: 5px;
-  }
-  &__link {
-    display: block;
-    font-size: 22px;
-    line-height: 32px;
-    color: $default;
-  }
-  &__icons {
-    padding-left: 30px;
-  }
-  &__svg {
-    & + & {
-      margin-left: 10px;
-    }
-  }
-  &__icon-social {
-    width: 35px;
-    height: 35px;
-    fill: #1f50a3;
-    transition: fill 0.5s;
-    &:hover {
-      fill: #fff;
-    }
-  }
+      &--tel {
+         &::before {
+            content: "";
+            background-image: url("../images/footer/phone_receiver.svg");
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 40px;
+            left: 0;
+         }
+      }
+   }
+   &__text {
+      opacity: 0.38;
+      @include adaptiv-value("font-size", 22, 20, 1);
+      line-height: 32/22 * 100%;
+      margin-bottom: 5px;
+   }
+   &__link {
+      display: block;
+      @include adaptiv-value("font-size", 22, 20, 1);
+      line-height: 32/22 * 100%;
+      color: $default;
+   }
+   &__icons {
+      padding-left: 30px;
+   }
+   &__svg {
+      & + & {
+         margin-left: 10px;
+      }
+   }
+   &__icon-social {
+      width: 35px;
+      height: 35px;
+      fill: #1f50a3;
+      transition: fill 0.5s;
+      &:hover {
+         fill: #fff;
+      }
+   }
 }
 
 @media (max-width: 1620px) {
-  .footer__inner::before {
-    right: 5%;
-  }
-  .footer__inner::after {
-    display: none;
-  }
+   .footer__inner::before {
+      right: 5%;
+   }
+   .footer__inner::after {
+      display: none;
+   }
 }
 
 @media (max-width: 768px) {
-  .footer__inner::before {
-    display: none;
-  }
-  .address {
-    margin: 0 auto;
-  }
+   .footer__inner::before {
+      display: none;
+   }
+   .address {
+      margin: 0 auto;
+   }
 }
 
 @media (max-width: 992px) {
-  .footer {
-    padding: 45px 0 80px;
-    min-height: auto;
-  }
-  .address {
-    max-width: 277px;
-    padding-top: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer {
-    padding-top: 25px;
-  }
+   .footer {
+      min-height: auto;
+   }
+   .address {
+      max-width: 277px;
+      padding-top: 40px;
+   }
 }

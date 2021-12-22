@@ -30,12 +30,12 @@
       }
       &__number {
          @extend%raleway-700;
-         font-size: 37px;
-         line-height: 45px;
+         @include adaptiv-value("font-size", 37, 25, 1);
+         line-height: 45/37 * 100%;
          color: #fff;
-         transition: color 0.4s;
+         transition: opacity 0.4s;
          &:hover {
-            color: $accent;
+            opacity: 0.56;
          }
       }
    }
@@ -50,6 +50,7 @@
 .menu {
    &__list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
    }
    &__item {
@@ -62,6 +63,14 @@
       }
       &:hover {
          border-bottom: 3px solid $accent;
+      }
+      span {
+         display: inline-block;
+         padding: 10px 10px;
+         font-size: 17px;
+         line-height: 29px;
+         color: #fff;
+         opacity: 0.56;
       }
       &--active {
          border-bottom: 3px solid $accent;
@@ -83,9 +92,6 @@
       &:active {
          color: $accent;
       }
-      &--active {
-         opacity: 0.56;
-      }
    }
 }
 
@@ -105,8 +111,12 @@
          width: 100%;
          z-index: 50;
          &__tel {
+            padding-left: 0;
+            padding-right: 15px;
             margin-left: auto;
-            margin-right: 30px;
+            &::before {
+               display: none;
+            }
          }
       }
       &-bottom {
@@ -114,7 +124,7 @@
             display: block;
             position: fixed;
             top: 30px;
-            left: 50px;
+            left: 20px;
             z-index: 50;
             width: 35px;
             height: 20px;
@@ -169,7 +179,7 @@
       transition: all 0.8s ease 0s;
       z-index: 25;
       &.active {
-         top: 80px;
+         top: 40px;
       }
       &__list {
          flex-direction: column;
@@ -182,45 +192,19 @@
          border-left: none;
          & + & {
             margin-left: 0;
-            margin-top: 20px;
+            margin-top: 18px;
          }
          &:last-child {
             border-right: none;
          }
-      }
-      &__link {
-         font-size: 27px;
-         line-height: 30px;
-      }
-   }
-}
-
-@media (max-width: 576px) {
-   .header {
-      &-top {
-         &__tel {
+         span {
             font-size: 20px;
-            line-height: 30px;
-            &::before {
-               width: 23px;
-               height: 23px;
-               top: 4px;
-               left: 5px;
-            }
-         }
-         &__number {
-            font-size: 27px;
-            line-height: 30px;
+            line-height: 32px;
          }
       }
-   }
-}
-
-@media (max-width: 360px) {
-   .menu {
       &__link {
-         font-size: 23px;
-         line-height: 27px;
+         font-size: 20px;
+         line-height: 32px;
       }
    }
 }
