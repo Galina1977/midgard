@@ -5,10 +5,11 @@
    }
    &__inner {
       display: flex;
+      gap: 10px;
    }
    &__item {
-      max-width: 400px;
-      min-height: 265px;
+      flex: 0 1 200px;
+      height: 100%;
       padding-right: 10px;
       border-right: 1px solid #303030;
       margin-right: 25px;
@@ -17,19 +18,11 @@
          margin-right: 0;
          border-right: 0;
       }
-      &--6,
-      &--7,
-      &--8,
-      &--9 {
-         padding-right: 0;
-         border-right: 0;
-         margin-right: 0;
-      }
    }
    &__text {
       font-size: 15px;
       line-height: 22/15 * 100%;
-      padding: 140px 5px 5px 5px;
+      padding: 140px 5px 10px 5px;
       position: relative;
       &::before {
          content: "";
@@ -53,7 +46,6 @@
       display: block;
    }
    .security__item {
-      min-height: auto;
       padding-right: 0;
       border-right: 0;
       margin-right: 0;
